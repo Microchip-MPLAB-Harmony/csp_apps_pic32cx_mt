@@ -56,6 +56,7 @@
 #include "peripheral/systick/plib_systick.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/pio/plib_pio.h"
+#include "peripheral/supc/plib_supc.h"
 #include "peripheral/tc/plib_tc0.h"
 #include "peripheral/flexcom/usart/plib_flexcom0_usart.h"
 #include "peripheral/sefc/plib_sefc0.h"

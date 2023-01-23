@@ -62,19 +62,19 @@ static const uint32_t PIO_INDEX[PIO_PORT_MAX] = { 0U, 1U, 2U, 0U };
 void PIO_Initialize ( void )
 {
  /* Port A Peripheral function A configuration */
-	PIOA_REGS->PIO_MSKR = 0x30LU;
-	PIOA_REGS->PIO_CFGR = 0x1U;
+   PIOA_REGS->PIO_MSKR = 0x30LU;
+   PIOA_REGS->PIO_CFGR = 0x1U;
 
  /* Port A Peripheral function B configuration */
-	PIOA_REGS->PIO_MSKR = 0x4LU;
-	PIOA_REGS->PIO_CFGR = 0x2U;
+   PIOA_REGS->PIO_MSKR = 0x4LU;
+   PIOA_REGS->PIO_CFGR = 0x2U;
 
  /* Port A Peripheral function D configuration */
-	PIOA_REGS->PIO_MSKR = 0x80000000LU;
-	PIOA_REGS->PIO_CFGR = 0x4U;
+   PIOA_REGS->PIO_MSKR = 0x80000000LU;
+   PIOA_REGS->PIO_CFGR = 0x4U;
 
  /* Port A Latch configuration */
-	PIOA_REGS->PIO_CODR = 0x0LU;
+   PIOA_REGS->PIO_CODR = 0x0LU;
 
 
 
