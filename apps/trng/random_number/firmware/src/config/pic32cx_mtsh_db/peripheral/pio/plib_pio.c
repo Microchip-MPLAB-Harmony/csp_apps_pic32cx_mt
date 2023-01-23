@@ -68,22 +68,22 @@ static const uint32_t PIO_INDEX[PIO_PORT_MAX] = { 0U, 1U, 2U, 0U };
 void PIO_Initialize ( void )
 {
  /* Port A Peripheral function A configuration */
-	PIOA_REGS->PIO_MSKR = 0x30U;
-	PIOA_REGS->PIO_CFGR = 0x1U;
+   PIOA_REGS->PIO_MSKR = 0x30U;
+   PIOA_REGS->PIO_CFGR = 0x1U;
 
  /* Port A Peripheral function GPIO configuration */
-	PIOA_REGS->PIO_MSKR = 0x8000U;
-	PIOA_REGS->PIO_CFGR = 0x0U;
+   PIOA_REGS->PIO_MSKR = 0x8000U;
+   PIOA_REGS->PIO_CFGR = 0x0U;
 
  /* Port A Pin 15 configuration */
-	PIOA_REGS->PIO_MSKR = 0x8000U;
-	PIOA_REGS->PIO_CFGR = (PIOA_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x200U;
+   PIOA_REGS->PIO_MSKR = 0x8000U;
+   PIOA_REGS->PIO_CFGR = (PIOA_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x200U;
 
  /* Port A Latch configuration */
-	PIOA_REGS->PIO_CODR = 0x8000U;
+   PIOA_REGS->PIO_CODR = 0x8000U;
 
     /* Clear the ISR register */
-	(uint32_t)PIOA_REGS->PIO_ISR;
+   (uint32_t)PIOA_REGS->PIO_ISR;
 
 
 
@@ -94,7 +94,7 @@ void PIO_Initialize ( void )
     /* Initialize Interrupt Pin data structures */
     portPinCbObj[0 + 0].pin = PIO_PIN_PA15;
     
-    for(i=0U; i<1U; i++)
+    for(i = 0U; i < 1U; i++)
     {
         portPinCbObj[i].callback = NULL;
     }
@@ -347,13 +347,13 @@ void PIOA_InterruptHandler(void)
     status  = PIOA_REGS->PIO_ISR;
     status &= PIOA_REGS->PIO_IMR;
 
-	for( j = 0U; j < 1U; j++ )
-	{
-		if(((status & (1UL << (portPinCbObj[j].pin & 0x1FU))) != 0U) && (portPinCbObj[j].callback != NULL))
-		{
-			portPinCbObj[j].callback ( portPinCbObj[j].pin, portPinCbObj[j].context );
-		}
-	}
+    for( j = 0U; j < 1U; j++ )
+    {
+        if(((status & (1UL << (portPinCbObj[j].pin & 0x1FU))) != 0U) && (portPinCbObj[j].callback != NULL))
+        {
+            portPinCbObj[j].callback ( portPinCbObj[j].pin, portPinCbObj[j].context );
+        }
+    }
 }
 
 /*******************************************************************************
