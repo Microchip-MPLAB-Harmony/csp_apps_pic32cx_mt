@@ -143,16 +143,14 @@ void SYS_Initialize ( void* data )
     DWDT_Initialize();
     CLK_Initialize();
     RSTC_Initialize();
+
     PIO_Initialize();
-
-
-
-	SYSTICK_TimerInitialize();
     SUPC_Initialize();
 
-	RTT_Initialize();
 
-    FLEXCOM0_USART_Initialize();
+
+
+	RTT_Initialize();
 
 
 
