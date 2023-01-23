@@ -54,6 +54,7 @@
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/pio/plib_pio.h"
+#include "peripheral/supc/plib_supc.h"
 #include "peripheral/sefc/plib_sefc0.h"
 #include "peripheral/pwm/plib_pwm.h"
 #include "peripheral/sefc/plib_sefc1.h"

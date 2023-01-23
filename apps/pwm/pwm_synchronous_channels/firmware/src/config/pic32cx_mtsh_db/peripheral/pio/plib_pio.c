@@ -65,16 +65,16 @@ void PIO_Initialize ( void )
 
 
  /* Port D Peripheral function A configuration */
-	PIOD_REGS->PIO_MSKR = 0xa0000U;
-	PIOD_REGS->PIO_CFGR = 0x1U;
+   PIOD_REGS->PIO_MSKR = 0xa0000U;
+   PIOD_REGS->PIO_CFGR = 0x1U;
 
  /* Port D Peripheral function B configuration */
-	PIOD_REGS->PIO_MSKR = 0x10000U;
-	PIOD_REGS->PIO_CFGR = 0x2U;
+   PIOD_REGS->PIO_MSKR = 0x10000U;
+   PIOD_REGS->PIO_CFGR = 0x2U;
 
  /* Port D Peripheral function C configuration */
-	PIOD_REGS->PIO_MSKR = 0x8U;
-	PIOD_REGS->PIO_CFGR = 0x3U;
+   PIOD_REGS->PIO_MSKR = 0x8U;
+   PIOD_REGS->PIO_CFGR = 0x3U;
 
 
 
