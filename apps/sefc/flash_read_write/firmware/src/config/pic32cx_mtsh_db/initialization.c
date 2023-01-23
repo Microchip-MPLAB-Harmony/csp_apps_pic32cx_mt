@@ -118,7 +118,9 @@ void SYS_Initialize ( void* data )
     DWDT_Initialize();
     CLK_Initialize();
     RSTC_Initialize();
+
     PIO_Initialize();
+    SUPC_Initialize();
 
 
 
