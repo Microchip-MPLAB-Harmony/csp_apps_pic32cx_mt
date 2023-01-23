@@ -53,10 +53,12 @@
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/rstc/plib_rstc.h"
 #include "peripheral/nvic/plib_nvic.h"
+#include "peripheral/systick/plib_systick.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/supc/plib_supc.h"
 #include "peripheral/rtc/plib_rtc.h"
+#include "peripheral/flexcom/usart/plib_flexcom0_usart.h"
 #include "peripheral/sefc/plib_sefc0.h"
 #include "peripheral/sefc/plib_sefc1.h"
 

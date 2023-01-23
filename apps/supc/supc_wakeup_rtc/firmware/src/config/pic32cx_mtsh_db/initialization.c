@@ -150,7 +150,10 @@ void SYS_Initialize ( void* data )
 
 
 
+	SYSTICK_TimerInitialize();
     RTC_Initialize();
+
+    FLEXCOM0_USART_Initialize();
 
 
 

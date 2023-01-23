@@ -1,0 +1,79 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32cx_mt_supc_wakeup_rtt",
+		"version": "3.0.0",
+		"displayName": "SUPC wakeup using RTT Example for PIC32CXMTSH Family",
+		"projectName": "supc_wakeup_rtt_pic32cx_mtsh_db",
+		"shortDescription": "This example shows how to enter different low power modes and exit it using the RTT alarm.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=6.05.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=4.21.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32CX-MT_DFP",
+			"semverRange": "^1.0.6"
+		},
+		"configurator": {
+			"name": "MCC",
+			"semverRange": ">=5.2.2"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32CX2051MTSH128",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"PIC32CXMTSH-Development Board"
+			],
+			[
+				"Harmony",
+				"Peripherals",
+				"SUPC"
+			],
+			[
+				"Peripherals",
+				"SUPC"
+			]
+		],
+		"peripherals": [
+			"SUPC"
+		],
+		"keywords": [
+			"MCC",
+			"Harmony",
+			"PIC32CX2051MTSH128",
+			"PIC32CXMTSH Family",
+			"SUPC",
+			"Reset Control",
+			"Reset"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

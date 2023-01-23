@@ -73,7 +73,7 @@ int main( void )
     printf( "\r\n-------------------------------------------------------------" );
     printf( "\r\n                          DWDT DEMO" );
     printf( "\r\n-------------------------------------------------------------" );
-    printf( "\r\nFlashing LED indicates process is running\r\nPress SW1 " 
+    printf( "\r\nFlashing LED indicates process is running\r\nPress SWITCH " 
             "to simulate a deadlock\r\n");
     
     SYSTICK_TimerStart();

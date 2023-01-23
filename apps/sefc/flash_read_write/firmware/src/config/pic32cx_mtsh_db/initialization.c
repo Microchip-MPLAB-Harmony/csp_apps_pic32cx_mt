@@ -114,6 +114,8 @@ void SYS_Initialize ( void* data )
 
 
     SEFC0_Initialize();
+
+    SEFC1_Initialize();
   
     DWDT_Initialize();
     CLK_Initialize();

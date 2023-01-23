@@ -89,6 +89,24 @@
 /*PIO max index */
 #define PIO_PORT_MAX    4U
 
+
+/*** Macros for LED pin ***/
+#define LED_Set()               (PIOD_REGS->PIO_SODR = (1<<18))
+#define LED_Clear()             (PIOD_REGS->PIO_CODR = (1<<18))
+#define LED_Toggle()            do {\
+                                            PIOD_REGS->PIO_MSKR = (1<<18); \
+                                            PIOD_REGS->PIO_ODSR ^= (1<<18);\
+                                        } while (0)
+#define LED_OutputEnable()      do {\
+                                            PIOD_REGS->PIO_MSKR = (1<<18); \
+                                            PIOD_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                        }while(0)
+#define LED_InputEnable()       do { \
+                                            PIOD_REGS->PIO_MSKR = (1<<18); \
+                                            PIOD_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                        } while (0)
+#define LED_Get()               ((PIOD_REGS->PIO_PDSR >> 18) & 0x1)
+#define LED_PIN                  PIO_PIN_PD18
 // *****************************************************************************
 /* PIO Ports
 

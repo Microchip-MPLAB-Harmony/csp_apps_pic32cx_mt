@@ -53,5 +53,5 @@ Refer to the following table for clock output pin and LED name for different boa
 
 | Board      | Clock output pin | LED Name |
 | ---------- | ---------------- |--------- |
-| [PIC32CXMTSH-Development Board]() | PA2 (Pin #10 on the Xplained Pro header)  | LED0 |
+| [PIC32CXMTSH-Development Board]() | PA2 (Pin #10 on the Xplained Pro header)  | D20 LED (RED) |
 |||

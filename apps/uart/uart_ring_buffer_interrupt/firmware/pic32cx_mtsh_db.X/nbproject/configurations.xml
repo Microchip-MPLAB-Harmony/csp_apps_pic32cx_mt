@@ -32,6 +32,9 @@
               <itemPath>../src/config/pic32cx_mtsh_db/peripheral/sefc/plib_sefc0.h</itemPath>
               <itemPath>../src/config/pic32cx_mtsh_db/peripheral/sefc/plib_sefc1.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="supc" displayName="supc" projectFiles="true">
+              <itemPath>../src/config/pic32cx_mtsh_db/peripheral/supc/plib_supc.h</itemPath>
+            </logicalFolder>
             <logicalFolder name="uart" displayName="uart" projectFiles="true">
               <itemPath>../src/config/pic32cx_mtsh_db/peripheral/uart/plib_uart_common.h</itemPath>
               <itemPath>../src/config/pic32cx_mtsh_db/peripheral/uart/plib_uart.h</itemPath>
@@ -207,6 +210,9 @@
               <itemPath>../src/config/pic32cx_mtsh_db/peripheral/sefc/plib_sefc0.c</itemPath>
               <itemPath>../src/config/pic32cx_mtsh_db/peripheral/sefc/plib_sefc1.c</itemPath>
             </logicalFolder>
+            <logicalFolder name="supc" displayName="supc" projectFiles="true">
+              <itemPath>../src/config/pic32cx_mtsh_db/peripheral/supc/plib_supc.c</itemPath>
+            </logicalFolder>
             <logicalFolder name="uart" displayName="uart" projectFiles="true">
               <itemPath>../src/config/pic32cx_mtsh_db/peripheral/uart/plib_uart.c</itemPath>
             </logicalFolder>
@@ -246,7 +252,7 @@
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="PIC32CX-MT_DEV_DFP" vendor="Microchip" version="0.1.43"/>
+        <pack name="PIC32CX-MT_DFP" vendor="Microchip" version="1.0.6"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

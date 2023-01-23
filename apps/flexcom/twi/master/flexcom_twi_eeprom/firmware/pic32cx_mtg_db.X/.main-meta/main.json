@@ -1,0 +1,83 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32cx_mt_flexcom_twi_eeprom_pic32cx_mtg_db",
+		"version": "3.0.0",
+		"displayName": "FLEXCOM TWI (I2C) EEPROM Example for PIC32CXMTG Family",
+		"projectName": "flexcom_twi_eeprom_pic32cx_mtg_db",
+		"shortDescription": "This example application shows how to use the flexcom module in TWI mode.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=6.05.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=4.21.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32CX-MT_DFP",
+			"semverRange": "^1.0.6"
+		},
+		"configurator": {
+			"name": "MCC",
+			"semverRange": ">=5.2.2"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32CX2051MTG128",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"PIC32CXMTG-Development Board"
+			],
+			[
+				"Harmony",
+				"Peripherals",
+				"FLEXCOM"
+			],
+			[
+				"Peripherals",
+				"FLEXCOM"
+			]
+		],
+		"peripherals": [
+			"FLEXCOM"
+		],
+		"keywords": [
+			"MCC",
+			"Harmony",
+			"PIC32CX2051MTG128",
+			"PIC32CXMTG Family",
+			"FLEXCOM",
+			"Serial Communication",
+			"I2C",
+			"SPI",
+			"UART",
+			"SERCOM",
+			"TWI"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

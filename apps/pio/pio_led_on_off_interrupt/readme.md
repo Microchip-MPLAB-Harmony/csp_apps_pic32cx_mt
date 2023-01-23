@@ -49,5 +49,5 @@ The following table shows the target hardware for the application projects.
 
 | Board      | Switch Name | LED Name Name
 | ----------------- | ---------- | ---------- |
-| [PIC32CXMTSH-Development Board]() | SW5 | D20 |
+| [PIC32CXMTSH-Development Board]() | Scroll Down | D20 |
 |||
