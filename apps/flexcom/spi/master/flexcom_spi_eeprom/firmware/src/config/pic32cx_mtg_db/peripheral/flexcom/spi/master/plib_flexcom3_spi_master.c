@@ -56,6 +56,7 @@
 /* Global object to save FLEXCOM SPI Exchange related data */
 static FLEXCOM_SPI_OBJECT flexcom3SpiObj;
 
+
 void FLEXCOM3_SPI_Initialize ( void )
 {
     /* Set FLEXCOM SPI operating mode */
@@ -253,6 +254,7 @@ void FLEXCOM3_InterruptHandler(void)
 
     /* save the status in global object before it gets cleared */
     flexcom3SpiObj.status = FLEXCOM3_REGS->FLEX_SPI_SR;
+
 
     if ((FLEXCOM3_REGS->FLEX_SPI_SR & FLEX_SPI_SR_RDRF_Msk ) == FLEX_SPI_SR_RDRF_Msk)
     {
