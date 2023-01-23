@@ -89,24 +89,6 @@
 /*PIO max index */
 #define PIO_PORT_MAX    4U
 
-
-/*** Macros for LED pin ***/
-#define LED_Set()               (PIOD_REGS->PIO_SODR = (1<<18))
-#define LED_Clear()             (PIOD_REGS->PIO_CODR = (1<<18))
-#define LED_Toggle()            do {\
-                                            PIOD_REGS->PIO_MSKR = (1<<18); \
-                                            PIOD_REGS->PIO_ODSR ^= (1<<18);\
-                                        } while (0)
-#define LED_OutputEnable()      do {\
-                                            PIOD_REGS->PIO_MSKR = (1<<18); \
-                                            PIOD_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
-                                        }while(0)
-#define LED_InputEnable()       do { \
-                                            PIOD_REGS->PIO_MSKR = (1<<18); \
-                                            PIOD_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
-                                        } while (0)
-#define LED_Get()               ((PIOD_REGS->PIO_PDSR >> 18) & 0x1)
-#define LED_PIN                  PIO_PIN_PD18
 // *****************************************************************************
 /* PIO Ports
 
@@ -222,6 +204,17 @@ typedef uint32_t PIO_PORT;
 #define    PIO_PIN_PD17   (113U)
 #define    PIO_PIN_PD18   (114U)
 #define    PIO_PIN_PD19   (115U)
+#define    PIO_PIN_PD20   (116U)
+#define    PIO_PIN_PD21   (117U)
+#define    PIO_PIN_PD22   (118U)
+#define    PIO_PIN_PD23   (119U)
+#define    PIO_PIN_PD24   (120U)
+#define    PIO_PIN_PD25   (121U)
+#define    PIO_PIN_PD26   (122U)
+#define    PIO_PIN_PD27   (123U)
+#define    PIO_PIN_PD28   (124U)
+#define    PIO_PIN_PD29   (125U)
+#define    PIO_PIN_PD30   (126U)
 
 /* This element should not be used in any of the PIO APIs.
    It will be used by other modules or application to denote that none of the PIO Pin is used */

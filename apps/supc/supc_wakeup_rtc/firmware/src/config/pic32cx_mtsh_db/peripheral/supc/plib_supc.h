@@ -64,7 +64,6 @@
 // Section: Data Types
 // *****************************************************************************
 // *****************************************************************************
-
 typedef enum
 {
     GPBR_REGS_0,
@@ -150,6 +149,7 @@ void SUPC_BackupModeEnter(void);
 uint32_t SUPC_GPBRRead(GPBR_REGS_INDEX reg);
 
 void SUPC_GPBRWrite(GPBR_REGS_INDEX reg, uint32_t data);
+
 
 
 // DOM-IGNORE-BEGIN
