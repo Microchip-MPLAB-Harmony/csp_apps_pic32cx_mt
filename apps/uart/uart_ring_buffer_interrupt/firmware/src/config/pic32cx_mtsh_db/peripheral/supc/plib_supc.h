@@ -1,20 +1,23 @@
 /*******************************************************************************
-  System Definitions
+  Supply Controller (SUPC) Peripheral Library (PLIB)
+
+  Company:
+    Microchip Technology Inc.
 
   File Name:
-    definitions.h
+    plib_supc.h
 
   Summary:
-    project system definitions.
+    Interface definition of the SUPC PLIB Header File
 
   Description:
-    This file contains the system-wide prototypes and definitions for a project.
+    None
 
- *******************************************************************************/
+*******************************************************************************/
 
-//DOM-IGNORE-BEGIN
+// DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2022 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -34,109 +37,127 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
- *******************************************************************************/
-//DOM-IGNORE-END
+*******************************************************************************/
+// DOM-IGNORE-END
 
-#ifndef DEFINITIONS_H
-#define DEFINITIONS_H
+#ifndef PLIB_SUPC_H // Guards against multiple inclusion
+#define PLIB_SUPC_H
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-#include <stdint.h>
-#include <stddef.h>
-#include <stdbool.h>
-#include "peripheral/uart/plib_uart.h"
-#include "peripheral/dwdt/plib_dwdt.h"
-#include "peripheral/clk/plib_clk.h"
-#include "peripheral/rstc/plib_rstc.h"
-#include "peripheral/nvic/plib_nvic.h"
-#include "peripheral/cmcc/plib_cmcc.h"
-#include "peripheral/pio/plib_pio.h"
-#include "peripheral/supc/plib_supc.h"
-#include "peripheral/sefc/plib_sefc0.h"
-#include "peripheral/sefc/plib_sefc1.h"
+
+#include "device.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
 
-extern "C" {
+    extern "C" {
 
 #endif
 // DOM-IGNORE-END
 
-/* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 200000000
+// *****************************************************************************
+// *****************************************************************************
+// Section: Data Types
+// *****************************************************************************
+// *****************************************************************************
+typedef enum
+{
+    GPBR_REGS_0,
+
+    GPBR_REGS_1,
+
+    GPBR_REGS_2,
+
+    GPBR_REGS_3,
+
+    GPBR_REGS_4,
+
+    GPBR_REGS_5,
+
+    GPBR_REGS_6,
+
+    GPBR_REGS_7,
+
+    GPBR_REGS_8,
+
+    GPBR_REGS_9,
+
+    GPBR_REGS_10,
+
+    GPBR_REGS_11,
+
+    GPBR_REGS_12,
+
+    GPBR_REGS_13,
+
+    GPBR_REGS_14,
+
+    GPBR_REGS_15,
+
+    GPBR_REGS_16,
+
+    GPBR_REGS_17,
+
+    GPBR_REGS_18,
+
+    GPBR_REGS_19,
+
+    GPBR_REGS_20,
+
+    GPBR_REGS_21,
+
+    GPBR_REGS_22,
+
+    GPBR_REGS_23,
+
+} GPBR_REGS_INDEX;
+
+typedef enum
+{
+    WAITMODE_WKUP_RTT = PMC_FSMR_RTTAL_Msk,      // RTT
+
+    WAITMODE_WKUP_RTC = PMC_FSMR_RTCAL_Msk      // RTC
+
+} WAITMODE_WKUP_SOURCE;
+
+typedef enum
+{
+    WAITMODE_FLASH_STANDBY = PMC_FSMR_FLPM_FLASH_STANDBY,
+
+    WAITMODE_FLASH_DEEPSLEEP = PMC_FSMR_FLPM_FLASH_DEEP_POWERDOWN
+
+} WAITMODE_FLASH_STATE;
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: System Functions
+// Section: Interface Routines
 // *****************************************************************************
 // *****************************************************************************
 
-// *****************************************************************************
-/* System Initialization Function
+void SUPC_Initialize(void);
 
-  Function:
-    void SYS_Initialize( void *data )
+void SUPC_SleepModeEnter(void);
 
-  Summary:
-    Function that initializes all modules in the system.
+void SUPC_WaitModeEnter(WAITMODE_FLASH_STATE flash_lpm, WAITMODE_WKUP_SOURCE source);
 
-  Description:
-    This function initializes all modules in the system, including any drivers,
-    services, middleware, and applications.
+void SUPC_BackupModeEnter(void);
 
-  Precondition:
-    None.
+uint32_t SUPC_GPBRRead(GPBR_REGS_INDEX reg);
 
-  Parameters:
-    data            - Pointer to the data structure containing any data
-                      necessary to initialize the module. This pointer may
-                      be null if no data is required and default initialization
-                      is to be used.
+void SUPC_GPBRWrite(GPBR_REGS_INDEX reg, uint32_t data);
 
-  Returns:
-    None.
 
-  Example:
-    <code>
-    SYS_Initialize ( NULL );
 
-    while ( true )
-    {
-        SYS_Tasks ( );
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
+
     }
-    </code>
 
-  Remarks:
-    This function will only be called once, after system reset.
-*/
-
-void SYS_Initialize( void *data );
-
-/* Nullify SYS_Tasks() if only PLIBs are used. */
-#define     SYS_Tasks()
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: extern declarations
-// *****************************************************************************
-// *****************************************************************************
-
-
-
-
-//DOM-IGNORE-BEGIN
-#ifdef __cplusplus
-}
 #endif
-//DOM-IGNORE-END
+// DOM-IGNORE-END
 
-#endif /* DEFINITIONS_H */
-/*******************************************************************************
- End of File
-*/
-
+#endif // PLIB_SUPC_H
