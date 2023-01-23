@@ -55,6 +55,13 @@
 #include "plib_tc0.h"
 
  
+ 
+
+ 
+
+ 
+ 
+
 /* Initialize channel in compare mode */
 void TC0_CH0_CompareInitialize (void)
 {
@@ -90,7 +97,7 @@ void TC0_CH0_CompareStop (void)
 
 uint32_t TC0_CH0_CompareFrequencyGet( void )
 {
-    return (uint32_t)(3125000UL);
+    return (uint32_t)(6250000UL);
 }
 
 /* Configure the period value */
@@ -164,7 +171,7 @@ void TC0_CH1_CompareStop (void)
 
 uint32_t TC0_CH1_CompareFrequencyGet( void )
 {
-    return (uint32_t)(3125000UL);
+    return (uint32_t)(6250000UL);
 }
 
 /* Configure the period value */
