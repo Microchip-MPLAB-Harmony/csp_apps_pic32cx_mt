@@ -26,7 +26,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| pic32cx_mtsh_db.X | MPLABX project for [PIC32CXMTSH-Development Board]() |
+| pic32cx_mtsh_db.X | MPLABX project for [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) |
 |||
 
 ## Setting up the hardware
@@ -35,10 +35,10 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| pic32cx_mtsh_db.X | [PIC32CXMTSH-Development Board]()
+| pic32cx_mtsh_db.X | [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 |||
 
-### Setting up [PIC32CXMTSH-Development Board]()
+### Setting up [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 
 - Connect an oscilloscope to monitor the PORT pin PA2 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
@@ -53,5 +53,5 @@ Refer to the following table for clock output pin and LED name for different boa
 
 | Board      | Clock output pin | LED Name |
 | ---------- | ---------------- |--------- |
-| [PIC32CXMTSH-Development Board]() | PA2 (Pin #10 on the Xplained Pro header)  | D20 LED (RED) |
+| [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) | PA2 (Pin #10 on the Xplained Pro header)  | D20 LED (RED) |
 |||

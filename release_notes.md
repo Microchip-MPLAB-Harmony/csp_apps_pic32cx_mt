@@ -16,9 +16,9 @@ Following table provides number of peripheral library examples available for dif
 
 | Development Kits  | MPLAB X applications |
 |:-----------------:|:-------------------:|
-| PIC32CXMTSH-Development Board | 25 |
-| PIC32CXMTC-Development Board | 4 |
-| PIC32CXMTG-Development Board | 4 |
+| [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) | 25 |
+| [PIC32CXMTC Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A) | 4 |
+| [PIC32CXMTG Evaluation Kit](https://www.microchip.com/en-us/development-tool/EV11K09A) | 4 |
 
 ### New Features
 

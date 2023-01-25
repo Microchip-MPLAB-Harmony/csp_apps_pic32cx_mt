@@ -17,7 +17,7 @@ Conversion of the two analog inputs is triggered from software trigger at every 
 
 | Board | Sequence of conversion |
 | ----- | ---------------------- |
-| [PIC32CXMTSH-Development Board]() |  AD1 --> AD2 |
+| [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) |  AD1 --> AD2 |
 |||
 
 Analog input voltage in the range of 0 V to 3.3 V is fed to the ADC input channel AD1, AD2. ADC conversion result is displayed on the console.
@@ -33,7 +33,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| pic32cx_mtsh_db.X | MPLABX project for [PIC32CXMTSH-Development Board]() |
+| pic32cx_mtsh_db.X | MPLABX project for [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) |
 |||
 
 ## Setting up the hardware
@@ -42,10 +42,10 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| pic32cx_mtsh_db.X | [PIC32CXMTSH-Development Board]()
+| pic32cx_mtsh_db.X | [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 |||
 
-### Setting up [PIC32CXMTSH-Development Board]()
+### Setting up [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 
 - Use a jumper wire to connect Pin 3 of Xplained Pro Header (AD1 is mapped to Port Pin PA30) to 3.3 V or GND
 - Use a jumper wire to connect Pin 1 of mikroBUS Socket (AD2 is mapped to Port Pin PA31) to 3.3 V or GND

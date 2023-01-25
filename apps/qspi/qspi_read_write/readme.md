@@ -26,9 +26,9 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| pic32cx_mtc_db.X | MPLABX project for [PIC32CXMTC-Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A) |
-| pic32cx_mtg_db.X | MPLABX project for [PIC32CXMTG-Development Board](https://www.microchip.com/en-us/development-tool/EV11K09A) |
-| pic32cx_mtsh_db.X | MPLABX project for [PIC32CXMTSH-Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB#Related%20Tools) |
+| pic32cx_mtc_db.X | MPLABX project for [PIC32CXMTC Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A) |
+| pic32cx_mtg_db.X | MPLABX project for [PIC32CXMTG Evaluation Kit](https://www.microchip.com/en-us/development-tool/EV11K09A) |
+| pic32cx_mtsh_db.X | MPLABX project for [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) |
 |||
 
 ## Setting up the hardware
@@ -37,20 +37,20 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| pic32cx_mtc_db.X | [PIC32CXMTC-Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A) |
-| pic32cx_mtg_db.X | [PIC32CXMTG-Development Board](https://www.microchip.com/en-us/development-tool/EV11K09A) |
-| pic32cx_mtsh_db.X| [PIC32CXMTSH-Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB#Related%20Tools) |
+| pic32cx_mtc_db.X | [PIC32CXMTC Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A) |
+| pic32cx_mtg_db.X | [PIC32CXMTG Evaluation Kit](https://www.microchip.com/en-us/development-tool/EV11K09A) |
+| pic32cx_mtsh_db.X| [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) |
 ||
 
-### Setting up [PIC32CXMTC-Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A)
+### Setting up [PIC32CXMTC Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A)
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
-### Setting up [PIC32CXMTG-Development Board](https://www.microchip.com/en-us/development-tool/EV11K09A)
+### Setting up [PIC32CXMTG Evaluation Kit](https://www.microchip.com/en-us/development-tool/EV11K09A)
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
-### Setting up [PIC32CXMTSH-Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB#Related%20Tools)
+### Setting up [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
@@ -65,7 +65,7 @@ The following table provides the LED name
 
 | Board      | LED name |
 | ----------------- | ---------------------------------------------- |
-| [PIC32CXMTC-Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A)  | D24 |
-| [PIC32CXMTG-Development Board](https://www.microchip.com/en-us/development-tool/EV11K09A)  | D3 |
-| [PIC32CXMTSH-Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB#Related%20Tools)  | D20 |
+| [PIC32CXMTC Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A)  | D24 |
+| [PIC32CXMTG Evaluation Kit](https://www.microchip.com/en-us/development-tool/EV11K09A)  | D3 |
+| [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)  | D20 |
 |||
