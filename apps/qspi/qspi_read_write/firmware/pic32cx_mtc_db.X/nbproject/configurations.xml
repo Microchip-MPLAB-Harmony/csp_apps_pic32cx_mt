@@ -37,7 +37,7 @@
               <itemPath>../src/config/pic32cx_mtc_db/peripheral/sefc/plib_sefc1.h</itemPath>
             </logicalFolder>
             <logicalFolder name="supc" displayName="supc" projectFiles="true">
-              <itemPath>../src/config/pic32cx_mtsh_db/peripheral/supc/plib_supc.h</itemPath>
+              <itemPath>../src/config/pic32cx_mtc_db/peripheral/supc/plib_supc.h</itemPath>
             </logicalFolder>
             <logicalFolder name="systick" displayName="systick" projectFiles="true">
               <itemPath>../src/config/pic32cx_mtc_db/peripheral/systick/plib_systick.h</itemPath>
@@ -216,7 +216,7 @@
               <itemPath>../src/config/pic32cx_mtc_db/peripheral/sefc/plib_sefc1.c</itemPath>
             </logicalFolder>
             <logicalFolder name="supc" displayName="supc" projectFiles="true">
-              <itemPath>../src/config/pic32cx_mtsh_db/peripheral/supc/plib_supc.c</itemPath>
+              <itemPath>../src/config/pic32cx_mtc_db/peripheral/supc/plib_supc.c</itemPath>
             </logicalFolder>
             <logicalFolder name="systick" displayName="systick" projectFiles="true">
               <itemPath>../src/config/pic32cx_mtc_db/peripheral/systick/plib_systick.c</itemPath>
