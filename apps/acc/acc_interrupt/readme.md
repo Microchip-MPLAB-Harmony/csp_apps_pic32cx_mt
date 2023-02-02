@@ -1,6 +1,6 @@
 ---
-parent: Harmony 3 peripheral library application examples for PIC32CXMTSH family
-title: ACC automatic window comparison 
+parent: Harmony 3 peripheral library application examples for PIC32CX MT family
+title: ACC interrupt 
 has_children: false
 has_toc: false
 ---

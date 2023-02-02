@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 peripheral library application examples for PIC32CXMT family
+parent: Harmony 3 peripheral library application examples for PIC32CX MT family
 title: QSPI flash read write 
 has_children: false
 has_toc: false

@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 peripheral library application examples for PIC32CXMTSH family
+parent: Harmony 3 peripheral library application examples for PIC32CX MT family
 title: TRNG random number 
 has_children: false
 has_toc: false

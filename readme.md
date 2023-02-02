@@ -29,6 +29,7 @@ This content can also be downloaded using content manager by following these [in
 | Folder     | Description                             |
 | ---        | ---                                     |
 | apps       | Contains peripheral library example applications |
+| docs       | Contains documentation in html format for offline viewing (to be used only after cloning this repository onto a local machine). Use [github pages](https://microchip-mplab-harmony.github.io/csp_apps_pic32cx_mt/) of this repository for viewing it online. |
 
 ## Code Examples
 

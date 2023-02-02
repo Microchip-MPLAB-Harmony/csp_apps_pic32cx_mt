@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 peripheral library application examples for PIC32CXMTSH family
+parent: Harmony 3 peripheral library application examples for PIC32CX MT family
 title: Clock configuration 
 has_children: false
 has_toc: false
