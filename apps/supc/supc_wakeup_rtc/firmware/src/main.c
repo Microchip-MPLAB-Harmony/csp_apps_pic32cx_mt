@@ -67,15 +67,16 @@ enum
     BACKUP_MODE = 'c'
 }SLEEP_MODES;
 
-uint8_t cmd = 0;
+static uint8_t cmd = 0;
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
 // *****************************************************************************
 // *****************************************************************************
-void timeout (uintptr_t context)
+static void timeout (uintptr_t context)
 {
+    (void)context;
     LED_Toggle();    
 }
 
