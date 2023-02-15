@@ -80,10 +80,10 @@ extern "C" {
 
 #define MEM_START_ADDRESS          (0x0U)
 
-#define SST26VF032B_JEDEC_ID       (0x004226BFUL)
+#define SST26VF016B_JEDEC_ID       (0x004126BFUL)
 
-#define LED_ON                     LED_Clear
-#define LED_OFF                    LED_Set
+#define LED_ON                     LED_Set
+#define LED_OFF                    LED_Clear
 #define LED_TOGGLE                 LED_Toggle
 
 // *****************************************************************************

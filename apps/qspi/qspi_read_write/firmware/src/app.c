@@ -75,9 +75,9 @@ APP_DATA appData;
 static uint32_t write_index = 0;
 static uint32_t sector_index = 0;
 
-qspi_command_xfer_t qspi_command_xfer = { 0 };
-qspi_register_xfer_t qspi_register_xfer = { 0 };
-qspi_memory_xfer_t qspi_memory_xfer = { 0 };
+static qspi_command_xfer_t qspi_command_xfer = { 0 };
+static qspi_register_xfer_t qspi_register_xfer = { 0 };
+static qspi_memory_xfer_t qspi_memory_xfer = { 0 };
 
 // *****************************************************************************
 // *****************************************************************************
@@ -221,6 +221,7 @@ static APP_TRANSFER_STATUS APP_MemoryRead( uint32_t *rx_data, uint32_t rx_data_l
     qspi_memory_xfer.instruction = SST26_CMD_HIGH_SPEED_READ;
     qspi_memory_xfer.width = QUAD_CMD;
     qspi_memory_xfer.dummy_cycles = 6;
+    qspi_memory_xfer.addr_len = ADDRL_24_BIT;    
 
     if (QSPI_MemoryRead(&qspi_memory_xfer, rx_data, rx_data_length, address) == false) {
         return APP_TRANSFER_ERROR_UNKNOWN;
@@ -240,6 +241,7 @@ static APP_TRANSFER_STATUS APP_MemoryWrite( uint32_t *tx_data, uint32_t tx_data_
 
     qspi_memory_xfer.instruction = SST26_CMD_PAGE_PROGRAM;
     qspi_memory_xfer.width = QUAD_CMD;
+    qspi_memory_xfer.addr_len = ADDRL_24_BIT;
 
     if (QSPI_MemoryWrite(&qspi_memory_xfer, tx_data, tx_data_length, address) == false)
     {
@@ -260,6 +262,7 @@ static APP_TRANSFER_STATUS APP_Erase(uint8_t instruction, uint32_t address)
     qspi_command_xfer.instruction = instruction;
     qspi_command_xfer.width = QUAD_CMD;
     qspi_command_xfer.addr_en = 1;
+    qspi_command_xfer.addr_len = ADDRL_24_BIT;
 
     if (QSPI_CommandWrite(&qspi_command_xfer, address) == false)
     {
@@ -298,6 +301,8 @@ void APP_Initialize ( void )
     for (i = 0; i < BUFFER_SIZE; i++)
         appData.writeBuffer[i] = i;
 
+    MATRIX1_REGS->MATRIX_PRTSR[0] = 0x09;
+    
     SYSTICK_TimerStart();
 }
 
@@ -367,7 +372,7 @@ void APP_Tasks ( void )
                 break;
             }
 
-            if (appData.jedec_id != SST26VF032B_JEDEC_ID)
+            if (appData.jedec_id != SST26VF016B_JEDEC_ID)
             {
                 appData.state = APP_STATE_ERROR;
                 break;
