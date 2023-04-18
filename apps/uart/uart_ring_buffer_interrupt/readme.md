@@ -45,6 +45,8 @@ The following table shows the target hardware for the application projects.
 - Connect the PD1 and PD2 pins of J18 Header to TX and RX pins of USB-UART Click board respectively. 
 - Connect the 3.3V and GND pins of J18 Header to 3.3V and GND pins of USB-UART Click board respectively. 
 - Connecting a mini-USB cable from USB UART Click board to Computer.
+- Power on the board using a 12V power supply on J3
+- Attach a debugger to the SWD/JTAG port J17
 
 ## Running the Application
 
