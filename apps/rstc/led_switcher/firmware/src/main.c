@@ -51,7 +51,7 @@
 #include "definitions.h"                // SYS function prototypes
 #include <stdio.h>
 
-unsigned int i=0;
+static unsigned int i=0;
 
 void reset_asserted (uintptr_t context)
 {

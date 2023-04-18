@@ -57,7 +57,7 @@ typedef struct
 }rstcCallback_t;
 
 
-static rstcCallback_t rstcCallbackObj;
+volatile static rstcCallback_t rstcCallbackObj;
 
 void RSTC_Initialize (void)
 {
@@ -151,13 +151,14 @@ void RSTC_CallbackRegister(RSTC_CALLBACK pCallback, uintptr_t context)
 }
 
 
-void RSTC_InterruptHandler(void)
+void __attribute__((used)) RSTC_InterruptHandler(void)
 {
     // Clear the interrupt flag
     RSTC_REGS->RSTC_SR;
 
     if (rstcCallbackObj.pCallback != NULL)
     {
-        rstcCallbackObj.pCallback(rstcCallbackObj.context);
+        uintptr_t context = rstcCallbackObj.context;
+        rstcCallbackObj.pCallback(context);
     }
 }
