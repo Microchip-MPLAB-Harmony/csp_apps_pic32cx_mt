@@ -43,7 +43,8 @@ The following table shows the target hardware for the application projects.
 - TC0_CH0  generates the PWM waveform on pin PA02
 - TC0_CH1 is configured in capture mode with the input signal connected to pin PA31
 - Use a jumper wire to connect "Pin 10 of Xplained Pro Header (TC0_TIOA0)" to "Pin 1 of mikroBUS Socket (TC0_TIOA1)"
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Power on the board using a 12V power supply on J3
+- Attach a debugger to the SWD/JTAG port J17
 
 ## Running the Application
 
