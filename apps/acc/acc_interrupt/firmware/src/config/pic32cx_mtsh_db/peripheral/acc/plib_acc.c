@@ -51,11 +51,13 @@
 #include "plib_acc.h"
 
 
-struct
+typedef struct
 {
     ACC_CALLBACK pCallback;
     uintptr_t context;
-}accCallbackObj;
+}ACC_CALLBACK_OBJ;
+
+volatile static ACC_CALLBACK_OBJ accCallbackObj;
 
 
 void ACC_Initialize(void)
@@ -112,12 +114,13 @@ void ACC_CallbackRegister(ACC_CALLBACK pCallback, uintptr_t context)
 }
 
 
-void ACC_InterruptHandler(void)
+void __attribute__((used)) ACC_InterruptHandler(void)
 {
     uint32_t isr = ACC_REGS->ACC_ISR;
-    if (((isr & ACC_ISR_MASK_Msk) == 0U) && 
-         (accCallbackObj.pCallback != NULL))
+    /* Additional temporary variable used to prevent MISRA violations (Rule 13.x) */
+    uintptr_t context = accCallbackObj.context;
+    if ((accCallbackObj.pCallback != NULL) && ((isr & ACC_ISR_MASK_Msk) == 0U))
     {
-        accCallbackObj.pCallback(((isr & ACC_ISR_SCO_Msk) != 0U), accCallbackObj.context);
+        accCallbackObj.pCallback(((isr & ACC_ISR_SCO_Msk) != 0U), context);
     }
 }

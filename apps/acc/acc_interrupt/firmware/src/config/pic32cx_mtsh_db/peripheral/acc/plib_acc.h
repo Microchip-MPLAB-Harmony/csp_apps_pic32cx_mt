@@ -65,7 +65,7 @@ typedef void(*ACC_CALLBACK)(bool output, uintptr_t context);
 void ACC_Initialize(void);
 void ACC_Enable(void);
 void ACC_Disable(void);
-void ACC_CallbackRegister(ACC_CALLBACK callback, uintptr_t context);
+void ACC_CallbackRegister(ACC_CALLBACK pCallback, uintptr_t context);
 
 #ifdef __cplusplus // Provide C++ Compatibility
 }
