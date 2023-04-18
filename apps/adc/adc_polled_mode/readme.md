@@ -42,7 +42,8 @@ The following table shows the target hardware for the application projects.
 
 - AD1 pin is used for analog input
 - Use a jumper wire to connect Pin 3 of Xplained PRO Header (AD1 is mapped to Port Pin PA30) to 3.3 V or GND
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Power on the board using a 12V power supply on J3
+- Attach a debugger to the SWD/JTAG port J17
 
 ## Running the Application
 
