@@ -42,8 +42,8 @@ The following table shows the target hardware for the application projects.
 
 #### Setting up the board
 
-- Connect a 12V power supply to the board. 
-- Connect the Debug USB port (J12) on the board to the computer using a micro USB cable
+- Power on the board using a 12V power supply on J3
+- Attach a debugger to the SWD/JTAG port J17
 
 ## Running the Application
 
