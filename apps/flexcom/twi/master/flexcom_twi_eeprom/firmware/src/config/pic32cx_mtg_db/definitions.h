@@ -55,8 +55,8 @@
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/supc/plib_supc.h"
-#include "peripheral/sefc/plib_sefc0.h"
 #include "peripheral/flexcom/twi/master/plib_flexcom1_twi_master.h"
+#include "peripheral/sefc/plib_sefc0.h"
 #include "peripheral/sefc/plib_sefc1.h"
 
 // DOM-IGNORE-BEGIN
@@ -66,6 +66,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "PIC32CX2051MTG128"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "PIC32CX_MT"
+#define DEVICE_SERIES		 "PIC32CXMTG"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 200000000
