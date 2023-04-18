@@ -1,0 +1,2112 @@
+<config configName="pic32cx_mtsh_db" projectName="flexcom_usart_ring_buffer_interrupt_pic32cx_mtsh_db" configVersion="1.1" device="PIC32CX2051MTSH128" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.0">
+   <usedPackages class="java.util.ArrayList"/>
+   <usedClasses class="java.util.TreeMap">
+      <entry>
+         <string>cmsis</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+      <entry>
+         <string>core</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+      <entry>
+         <string>dfp</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+      <entry>
+         <string>flexcom0</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+      <entry>
+         <string>sefc0</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+      <entry>
+         <string>sefc1</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+   </usedClasses>
+   <usedLibraries class="java.util.ArrayList">
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.1"/>
+   </usedLibraries>
+   <tokenMap class="java.util.TreeMap">
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="cmsis" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
+  &lt;UserData dnOrder=&quot;0&quot;&gt;
+    &lt;GraphSettings canvasHeight=&quot;332&quot; canvasWidth=&quot;377&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;__ROOTVIEW&quot;&gt;
+      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;cmsis&quot; x=&quot;30&quot; y=&quot;100&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;core&quot; x=&quot;30&quot; y=&quot;60&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;dfp&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;flexcom0&quot; x=&quot;240&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;sefc0&quot; x=&quot;30&quot; y=&quot;140&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;sefc1&quot; x=&quot;30&quot; y=&quot;220&quot;/&gt;
+      &lt;/ElementPositions&gt;
+    &lt;/ComponentGraph&gt;
+  &lt;/UserData&gt;
+&lt;/UserData&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="FLEXCOM0_CLOCK_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;FLEXCOM0_CLOCK_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="FLEXCOM0_CLOCK_FREQUENCY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;FLEXCOM0_CLOCK_FREQUENCY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;100000000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="FLEXCOM0_INTERRUPT_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;FLEXCOM0_INTERRUPT_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="FLEXCOM0_INTERRUPT_ENABLE_UPDATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;FLEXCOM0_INTERRUPT_ENABLE_UPDATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="FLEXCOM0_INTERRUPT_HANDLER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;FLEXCOM0_INTERRUPT_HANDLER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;FLEXCOM0_InterruptHandler&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="FLEXCOM0_INTERRUPT_HANDLER_LOCK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;FLEXCOM0_INTERRUPT_HANDLER_LOCK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_9_0_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_9_0_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_9_0_HANDLER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_9_0_HANDLER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;FLEXCOM0_InterruptHandler&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_9_0_HANDLER_LOCK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_9_0_HANDLER_LOCK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_29_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_29_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;FLEXCOM0_IO0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_29_PERIPHERAL_FUNCTION"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_29_PERIPHERAL_FUNCTION&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;A&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_30_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_30_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;FLEXCOM0_IO1&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_30_PERIPHERAL_FUNCTION"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_30_PERIPHERAL_FUNCTION&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;A&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PORT_A_MSKR_ValueA"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_A_MSKR_ValueA&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x30&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PORT_A_MSKR_ValueB"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_A_MSKR_ValueB&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PORT_A_MSKR_ValueC"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_A_MSKR_ValueC&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PORT_A_MSKR_ValueD"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_A_MSKR_ValueD&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PORT_A_MSKR_ValueE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_A_MSKR_ValueE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PORT_A_MSKR_ValueF"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_A_MSKR_ValueF&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PORT_A_MSKR_ValueG"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_A_MSKR_ValueG&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PORT_A_MSKR_ValueGPIO"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_A_MSKR_ValueGPIO&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="dfp" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="BAUD_RATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;BAUD_RATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="BRG_VALUE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;BRG_VALUE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;54&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="EXTERNAL_CLOCK_FREQ"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;EXTERNAL_CLOCK_FREQ&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM0_COMMON_HEADER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM0_COMMON_HEADER&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;dest&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;/peripheral/flexcom/usart/&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;plib_flexcom_usart_local.h&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;2&quot; id=&quot;project&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;config/pic32cx_mtsh_db/peripheral/flexcom/usart/&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;3&quot; id=&quot;source&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;../peripheral/flexcom_11268/templates/plib_flexcom_usart_local.h&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;4&quot; id=&quot;type&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;HEADER&lt;/Value&gt;
+      &lt;/String&gt;
+    &lt;/Attributes&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM0_HEADER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM0_HEADER&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;dest&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;/peripheral/flexcom/usart/&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;Boolean dnOrder=&quot;1&quot; id=&quot;markup&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+      &lt;String dnOrder=&quot;2&quot; id=&quot;name&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;plib_flexcom0_usart.h&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;3&quot; id=&quot;project&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;config/pic32cx_mtsh_db/peripheral/flexcom/usart/&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;4&quot; id=&quot;source&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;../peripheral/flexcom_11268/templates/plib_flexcom_usart_ring_buffer.h.ftl&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;5&quot; id=&quot;type&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;HEADER&lt;/Value&gt;
+      &lt;/String&gt;
+    &lt;/Attributes&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM0_SOURCE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM0_SOURCE&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;dest&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;/peripheral/flexcom/usart/&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;Boolean dnOrder=&quot;1&quot; id=&quot;markup&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+      &lt;String dnOrder=&quot;2&quot; id=&quot;name&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;plib_flexcom0_usart.c&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;3&quot; id=&quot;project&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;config/pic32cx_mtsh_db/peripheral/flexcom/usart/&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;4&quot; id=&quot;source&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;../peripheral/flexcom_11268/templates/plib_flexcom_usart_ring_buffer.c.ftl&lt;/Value&gt;
+      &lt;/String&gt;
+    &lt;/Attributes&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_INSTANCE_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_INSTANCE_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;1&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPIS_BUSY_PIN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPIS_BUSY_PIN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPIS_BUSY_PIN_LOGIC_LEVEL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPIS_BUSY_PIN_LOGIC_LEVEL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPIS_RX_BUFFER_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPIS_RX_BUFFER_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPIS_TX_BUFFER_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPIS_TX_BUFFER_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPIS_USE_BUSY_PIN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPIS_USE_BUSY_PIN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_BAUD_RATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_BAUD_RATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR0_BAUD_RATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR0_BAUD_RATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR0_BITS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR0_BITS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR0_CPOL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR0_CPOL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR0_CSAAT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR0_CSAAT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR0_CSNAAT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR0_CSNAAT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR0_DLYBCT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR0_DLYBCT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR0_DLYBS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR0_DLYBS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR0_NCPHA"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR0_NCPHA&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR0_SCBR_VALUE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR0_SCBR_VALUE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;100&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR1_BAUD_RATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR1_BAUD_RATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR1_BITS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR1_BITS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR1_CPOL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR1_CPOL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR1_CSAAT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR1_CSAAT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR1_CSNAAT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR1_CSNAAT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR1_DLYBCT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR1_DLYBCT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR1_DLYBS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR1_DLYBS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR1_NCPHA"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR1_NCPHA&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR1_SCBR_VALUE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR1_SCBR_VALUE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;100&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR_BITS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR_BITS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR_CPOL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR_CPOL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_CSR_NCPHA"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_CSR_NCPHA&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_DUMMY_DATA"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_DUMMY_DATA&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_EN_NPCS0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_EN_NPCS0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_EN_NPCS1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_EN_NPCS1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_FIFO_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_FIFO_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_FIFO_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_FIFO_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_MR_BRSRCCLK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_MR_BRSRCCLK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_MR_DLYBCS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_MR_DLYBCS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_MR_MSTR"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_MR_MSTR&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_MR_PCS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_MR_PCS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_MR_PCS_NPCS0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_MR_PCS_NPCS0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_MR_PCS_NPCS1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_MR_PCS_NPCS1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_NUM_CSR"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_NUM_CSR&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SPI_PERIPHERAL_CLOCK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SPI_PERIPHERAL_CLOCK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;100000000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SYS_DEF"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SYS_DEF&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;markup&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;core.LIST_SYSTEM_DEFINITIONS_H_INCLUDES&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;2&quot; id=&quot;source&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;../peripheral/flexcom_11268/templates/system/definitions.h.ftl&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;3&quot; id=&quot;type&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;STRING&lt;/Value&gt;
+      &lt;/String&gt;
+    &lt;/Attributes&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_SYS_INIT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_SYS_INIT&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;markup&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;core.LIST_SYSTEM_INIT_C_SYS_INITIALIZE_PERIPHERALS&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;2&quot; id=&quot;source&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;../peripheral/flexcom_11268/templates/system/initialization.c.ftl&lt;/Value&gt;
+      &lt;/String&gt;
+      &lt;String dnOrder=&quot;3&quot; id=&quot;type&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;STRING&lt;/Value&gt;
+      &lt;/String&gt;
+    &lt;/Attributes&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_TWI_CLK_SRC_FREQ"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_TWI_CLK_SRC_FREQ&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;100000000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_TWI_CWGR_BRSRCCLK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_TWI_CWGR_BRSRCCLK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_TWI_CWGR_CHDIV"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_TWI_CWGR_CHDIV&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;122&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_TWI_CWGR_CKDIV"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_TWI_CWGR_CKDIV&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_TWI_CWGR_CLDIV"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_TWI_CWGR_CLDIV&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;122&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_TWI_OPMODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_TWI_OPMODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_TWI_SLAVE_ADDRESS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_TWI_SLAVE_ADDRESS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_TWI_TIMEOUT_COUNT_VAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_TWI_TIMEOUT_COUNT_VAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_USART_FIFO_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_USART_FIFO_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_USART_FIFO_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_USART_FIFO_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_USART_INTERRUPT_MODE_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_USART_INTERRUPT_MODE_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_USART_MR_OVER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_USART_MR_OVER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_USART_MR_USART_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_USART_MR_USART_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_USART_MR_USCLKS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_USART_MR_USCLKS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_USART_OPERATING_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_USART_OPERATING_MODE&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;4&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_USART_RING_BUFFER_MODE_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_USART_RING_BUFFER_MODE_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_USART_RX_FIFO_THRESHOLD"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_USART_RX_FIFO_THRESHOLD&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_USART_RX_FIFO_THRESHOLD_2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_USART_RX_FIFO_THRESHOLD_2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_USART_TTGR"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_USART_TTGR&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEXCOM_USART_TX_FIFO_THRESHOLD"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEXCOM_USART_TX_FIFO_THRESHOLD&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEX_USART_CLOCK_FREQ"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEX_USART_CLOCK_FREQ&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;100000000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEX_USART_IRDA_FILTER_VAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEX_USART_IRDA_FILTER_VAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;137&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEX_USART_MR_CHRL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEX_USART_MR_CHRL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEX_USART_MR_MODE9"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEX_USART_MR_MODE9&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEX_USART_MR_NBSTOP"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEX_USART_MR_NBSTOP&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FLEX_USART_MR_PAR"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FLEX_USART_MR_PAR&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="FP_VALUE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;FP_VALUE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;2&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="I2C_CLOCK_SPEED"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;I2C_CLOCK_SPEED&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="I2C_CLOCK_SPEED_HZ"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;I2C_CLOCK_SPEED_HZ&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="I2C_PLIB_API_PREFIX"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;I2C_PLIB_API_PREFIX&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="RECEIVE_DATA_REGISTER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;RECEIVE_DATA_REGISTER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;&amp;amp;(FLEXCOM0_REGS-&amp;gt;FLEX_US_RHR)&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CHARSIZE_BITS_10_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CHARSIZE_BITS_10_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CHARSIZE_BITS_11_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CHARSIZE_BITS_11_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CHARSIZE_BITS_12_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CHARSIZE_BITS_12_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CHARSIZE_BITS_13_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CHARSIZE_BITS_13_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CHARSIZE_BITS_14_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CHARSIZE_BITS_14_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CHARSIZE_BITS_15_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CHARSIZE_BITS_15_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CHARSIZE_BITS_16_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CHARSIZE_BITS_16_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CHARSIZE_BITS_8_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CHARSIZE_BITS_8_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CHARSIZE_BITS_9_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CHARSIZE_BITS_9_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CLOCK_PHASE_LEADING_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CLOCK_PHASE_LEADING_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CLOCK_PHASE_TRAILING_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CLOCK_PHASE_TRAILING_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CLOCK_POLARITY_HIGH_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CLOCK_POLARITY_HIGH_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_CLOCK_POLARITY_LOW_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_CLOCK_POLARITY_LOW_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_INTERRUPT_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_INTERRUPT_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="SPI_PLIB_API_PREFIX"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;SPI_PLIB_API_PREFIX&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="TRANSMIT_DATA_REGISTER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;TRANSMIT_DATA_REGISTER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;&amp;amp;(FLEXCOM0_REGS-&amp;gt;FLEX_US_THR)&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="TWI_INTERRUPT_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;TWI_INTERRUPT_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_DATA_5_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_DATA_5_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_DATA_6_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_DATA_6_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_DATA_7_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_DATA_7_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_DATA_8_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_DATA_8_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_DATA_9_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_DATA_9_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_DATA_BITS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_DATA_BITS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_FRAMING_ERROR_VALUE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_FRAMING_ERROR_VALUE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_INTERRUPT_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_INTERRUPT_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_OVERRUN_ERROR_VALUE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_OVERRUN_ERROR_VALUE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_PARITY_ERROR_VALUE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_PARITY_ERROR_VALUE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_PARITY_EVEN_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_PARITY_EVEN_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_PARITY_MARK_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_PARITY_MARK_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_PARITY_MULTIDROP_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_PARITY_MULTIDROP_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_PARITY_NONE_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_PARITY_NONE_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_PARITY_ODD_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_PARITY_ODD_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_PARITY_SPACE_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_PARITY_SPACE_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_PLIB_API_PREFIX"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_PLIB_API_PREFIX&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_RING_BUFFER_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_RING_BUFFER_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_RX_RING_BUFFER_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_RX_RING_BUFFER_SIZE&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;20&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_STOP_1_5_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_STOP_1_5_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_STOP_1_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_STOP_1_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_STOP_2_BIT_MASK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_STOP_2_BIT_MASK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USART_TX_RING_BUFFER_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USART_TX_RING_BUFFER_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USE_SPI_DMA"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USE_SPI_DMA&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USE_USART_RECEIVE_DMA"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USE_USART_RECEIVE_DMA&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="flexcom0" name="USE_USART_TRANSMIT_DMA"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;flexcom0&gt;
+  &lt;flexcom0 dnOrder=&quot;0&quot; id=&quot;USE_USART_TRANSMIT_DMA&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;flexcom0&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/flexcom0&gt;
+&lt;/flexcom0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sefc0" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sefc1" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+   </tokenMap>
+   <generatedFileHashHistoryMap class="java.util.HashMap">
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\nvic\plib_nvic.c</file>
+         <hash>6b246165181dd094a762c8da7c57b1fcfefde1a643ad3822f68d4a703f339abf</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\cmcc0.h</file>
+         <hash>d966d771954250a6070f83b323c85c84cd3711b7b9cf492902d9da0e0943a507</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</file>
+         <hash>6cdb5b324f2fd1bb5b2f47298ba6e6777e735d7cad3bb8d942cd36e2c6e65328</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\sfr.h</file>
+         <hash>e91c40578f82ae673cac83f2032996e76cd4b4b24f1b593f56420e6203d366c8</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h</file>
+         <hash>3d4e265d0aa42f888385ccf073666e6ebb5ec9f834760b9da27c474e177f708d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\supc.h</file>
+         <hash>cc220665125d7b5bf4ae7ee0537602f4f5a2a0874710e6c206fd574566e1431c</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\mem2mem.h</file>
+         <hash>c101d572a57710ee7ce5ba0b69721221fc8d8103a9d709a1c14b7b5b5d3fd012</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\sfr.h</file>
+         <hash>d0afc0f395ad477d8215c16e6a35a8e704861ceee87e3be7b54281cc5719da31</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\nvic\plib_nvic.h</file>
+         <hash>81e813a093101d546799e00723cbf7245e2d18471fa51c8d130c5809cecca03e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\pmc.h</file>
+         <hash>00ecbae5613306085b275b27b38f1f04d515fdd0a556288e164565fec0fabdfd</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\mcspi.h</file>
+         <hash>ee61e4b827dae4ce6a4a91aebba6541b7e68e82e565f4c7bb1dc25a4c6f120a5</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\uart.h</file>
+         <hash>eb1fc577dda2e5ab9c11eb3ff8195c88477355a8b3d13c0a2aad54103cef0546</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\gpbr.h</file>
+         <hash>f4bc603f1dd55a7b2be8757c150188a4c637bde428b2e96a741ae453b93e98a7</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\flexcom\usart\plib_flexcom_usart_local.h</file>
+         <hash>d7d8e1bab1992fd5471cbee03dfbe206d761d9e622c721c08f3546ef7d335b64</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\startup_xc32.c</file>
+         <hash>ef7f14c52d7d65f5b819942dab6f2ae93157d35a40ee248ea4b6e1b4cad4f51f</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\supc\plib_supc.h</file>
+         <hash>69d1e7040ea51b94b62f40bf6432c66a608056de2adf4956bdc432355f019631</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\sefc.h</file>
+         <hash>604eaef053b57b0a7f31cf5f28205f9e30bc4f24d10e37cf1d01432ac1e9be49</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\ipc.h</file>
+         <hash>27efcd5714db4f2f6c0af59695175f368cb61479a5dffcb40729ba4494485f9b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\adc.h</file>
+         <hash>a61b190334eb69cda0ec5f2ce74fc8d6d14831e1caca5959f6d4491d3d504a44</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\tc3.h</file>
+         <hash>9f0ef96558646513cf17ddc4794c0a429eaee6992f490ebe8cb65812449ec062</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\matrix1.h</file>
+         <hash>efb57bab516d894c3a683b4ff048d41dba3d0fe9a21aaa11e3650c30937ed416</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\pwm.h</file>
+         <hash>8fef5abdaa5fa5af3365aaa3f07d48b5ea9d769266dec9dd86f1bff94c96df44</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\adc.h</file>
+         <hash>a37346bfd5770d8a8971f288d88721b86c597de5882541168fd16160ead49316</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\pwm.h</file>
+         <hash>66aa7e725a61abb8f6136996ee9ec5a9907cb693894727ea4587ac1a2d9d9239</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\clk\plib_clk.h</file>
+         <hash>49f362cc6b9f602d7d69fdf7694fece0e0d1903dec3a8d19fccb794689170a9a</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\flexcom4.h</file>
+         <hash>0e40ebfa7419a496ee1c90a6acb7b0feb5c2ca1f4e8935fec440abffcfa6890b</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\sefc\plib_sefc0.h</file>
+         <hash>35517063851978e25640dfaf6512a6af69907bec245ccd05698bf94afee49581</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\qspi.h</file>
+         <hash>38b4658908648609ea3078502851c354dbefdfe1a68fc0bb860719836c062838</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\sha.h</file>
+         <hash>b584709d1adef5a40462dc190a6c16c5e379c6cb76b37ff56f6fa67cdd91fe3b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\sha.h</file>
+         <hash>0f4009e8ea27d549630fd31598d3f3a213efc1b69eff3857b203b18e22bca20c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\supc\plib_supc.c</file>
+         <hash>453c5a214ee4912d7a5236b717fd59b99fe414a522e33f81b44b1faa0bfe1e9d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\ipc1.h</file>
+         <hash>2f9dc64179748966c4a554f43e0c002499ae3cbe48856b695678f68c2f65ad2d</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\pin_configurations.csv</file>
+         <hash>7ac34a741153c980f55d278b125559599562545657b1f4283b128512ce7471ff</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\flexcom0.h</file>
+         <hash>04e511535226f3338ded5c5913d193663ee3ccb730ad4c475844413e041c4241</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\clk\plib_clk.c</file>
+         <hash>746f016d2ee22e9ba4bd68707a9a8e955b4fb84f539cac5344617ec19d4c8b69</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\rstc\plib_rstc.h</file>
+         <hash>e2279b434403c1f16a5da80447b78283566301636cbec855c6c5d8591507d8ba</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv7.h</file>
+         <hash>de1b5eb9ed566527b66dc06f4ecb6a43ab6800f7dac47e87c9cb42984dca41bb</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\aesb.h</file>
+         <hash>13d8b11e2ee8b7f632f2bdbe93b2bb50fcfe205032561b0ebfc1e9924773f939</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h</file>
+         <hash>d074534d7106cec83474b3b0a897bd2553e1a8895ecbd54f4f4fb25928066eee</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\rstc\plib_rstc.c</file>
+         <hash>ee07d7f5fb5c51a2ce166063b973878bf0976ae5f61d7f08529e240a69c0c1a2</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\sefc\plib_sefc0.c</file>
+         <hash>2666b2b03017cb9382e2f9224af9a1b1158b5a063163946a0ed60ee62701f571</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\tc.h</file>
+         <hash>e18232c5e45ea9d0598d710e284a336e9d4ace78dee1d0b293fb5c35edf9818a</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\exceptions.c</file>
+         <hash>1fd383302c4cdf1cc6a804aa03b8abe8c1e5e5e9ea3450438c34dcea441e6b34</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\rstc.h</file>
+         <hash>87e8eb4a95b71e71421f80664084f7076b327e5e521cf445582bec5033d990ee</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\fuses.h</file>
+         <hash>d3827e165bcb9b4cfcc159f72c63b93f81f6c605045ab6f519afbb6dea2ba678</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\cmcc\plib_cmcc.h</file>
+         <hash>648ef8d199996bad027d6c64a669a9ee41c334029323d94e2e69dee56dcfa593</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\slcdc.h</file>
+         <hash>807779ca98a5484266ad38d9e6c8bd3e1f360dbf533005c88a0619cb4c953c90</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>
+         <hash>11b39b96ddc1125124762b3423a77b90dd40ea5b4582a3513830245046b24311</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\cmcc\plib_cmcc.c</file>
+         <hash>ba0fcd94a826c11a458b5a75f6bb0286b80d201144e2263cd5d4c6284563d826</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\emafe.h</file>
+         <hash>07ef42e277d06cac293639dc6ad20e4b08e569b27f01dd231827a7a33f23034e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\sefc0.h</file>
+         <hash>a605c296665a6a4515a7b4105cd85bda75877a60a8cd5052d62ddad3227f3743</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\supc.h</file>
+         <hash>43c27e2fbd4964e80a654401503dd05324063e72cebdd8514b3ac41acca7d88c</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_compiler.h</file>
+         <hash>869640702d811c4c63abb52206715c891a93fd03be954df5ad40d378355af3d6</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\toolchain_specifics.h</file>
+         <hash>a4f1774c6f1f8c6cd522567536c9e9d75ca63259b868015ac9b0fb0aeeffe1f4</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\sfrbu.h</file>
+         <hash>0fc1663b41efeba71324ae4d928017b05c39d88fa7eade44704d003d069a2aef</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\pic32cx2051mtsh128.h</file>
+         <hash>eaa7ed8f20afd6aefdfb5124a2afb9394cf34409127bfad7db2c48d112fcb47d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\tc0.h</file>
+         <hash>1d909e5483159ce2349215d7a10571207ea5fd902e4c8b4b8c3cca22c8e1ae32</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\matrix0.h</file>
+         <hash>5bd567e226154bd2f93e4836b4d35ebcb888c5aa87fd51213075cbd0e4fb25f0</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\pmc.h</file>
+         <hash>3830f7cc0780326af86951a42e5e59664dfdc9cf445421b7064e5fbfcc3a3a9e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\matrix.h</file>
+         <hash>9ff8953d99ffee527d08c6bd6a0be9cf0f589e544dc223f418188ad876671726</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\device_vectors.h</file>
+         <hash>4708aa91d43efb41347f7e94739b057ff002880f67f5763528992d1660d2333e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\sefc\plib_sefc_common.h</file>
+         <hash>3e24f63c9dcb1ed3c31964d7718ebdd4e4e012f6a8d1a99b59f1cce1d2158137</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\flexcom3.h</file>
+         <hash>3bdeb0ee4cbf5348253763709221fa84aff5563055fd916242f0760d56d73631</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\sefc\plib_sefc1.h</file>
+         <hash>83b92e05b738cfeed963f18fe17bd28c298bc3092af00bb0448676aa58e8151c</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\cmcc.h</file>
+         <hash>7269dc366f9fbdd7a873d7705297f51742da761a690d4d5f98781eccddaf522c</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\flexcom7.h</file>
+         <hash>314af25dd179d516e49673d9ff6cffe464855ab0b9721419537fbdb4a9fecfa7</hash>
+      </entry>
+      <entry>
+         <file>..\src\main.c</file>
+         <hash>d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\acc.h</file>
+         <hash>7f6d7aabcf13d2875eb188ce1dba14092afaa6ad49c2a36a352526186a03ad7c</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\core_cm4.h</file>
+         <hash>d59a9e3ed4cf43a3c74a2e48f344d41be2b6363ef9394ea2c551052fe553a6af</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\pio.h</file>
+         <hash>bf5f00bb35122489714d76bcad3f892467e7cd2736b7f20fd775bc23981258a5</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\trng.h</file>
+         <hash>4c8a383a7de871dbc284d7ee297c53022dc2051ff7f16f4a2a2fafffe471abfd</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\interrupts.c</file>
+         <hash>7467b596b4cd5964de813e1db6d6c889614d9240115dd617fdaae000e7e3de0e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\interrupts.h</file>
+         <hash>4f744b1c6b5cc7aefac14b41844e178c8d3a02286ee0b6f74f23383593631882</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\sefc\plib_sefc1.c</file>
+         <hash>10160ae893fdc4dbcf4b8f76752e74f6562a5845672a5a45cf940f65e15c46ca</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\cpkcc.h</file>
+         <hash>6deeadbdfb75e11cc4b8f07a2fd6b96d6eb59fc3ebad29fa14986d9930d7b9bd</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\acc.h</file>
+         <hash>8b8126dd55ac86b42c09e97e607405e5c4630669818f4271c22e7565887ce822</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\fuses.h</file>
+         <hash>6bf658fcbe285d4ec4187442136158d57ca92d54f1676143c90988e77520e314</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\dwdt.h</file>
+         <hash>473b6d35a935a36ba740bc07e7074505e62b7209351c4ec146007b15587608ba</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\rtc.h</file>
+         <hash>748650ef25d222c2ce096cc5585cac421f756b449c99b12801efae6161d0ff96</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\emafe.h</file>
+         <hash>a051d412f9eb4adcc8a1f617e3ad4265cee45db7c87bd67e9493ac256d88cdc2</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\device.h</file>
+         <hash>f1e98c5f5f67d72e48008397572f18fe4f3ba3f2d50ae075b616f8b1cf3b9ccf</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\pio1.h</file>
+         <hash>10d5bc852cfa22ebffe5c820417b6b1b9dad7d10b2c3ed938ce0381be9bb12fe</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\pio\pic32cx2051mtsh128.h</file>
+         <hash>3f9c54db82ca8f3575d0f6e61909ec926beb75a80bc88cc80892d00e648efb21</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</file>
+         <hash>2de01ae2556a38eb82c389de23c701805ec63308cfbcf3f84cb12141589b0858</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_iccarm.h</file>
+         <hash>f28119adbc81fb0e3c957c9aebe8fb423ad93634e76ead3caa2b0818d2e123ae</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\sefc1.h</file>
+         <hash>ee488c3c013fff2c0e4a28037dc3d127d28b25adbf411e88b3167b767fe1140b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\qspi.h</file>
+         <hash>35aa7e90a5980de59ced5c69943d51939aaea3fd654f6f8b4f40be1d2fdb6d11</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\icm.h</file>
+         <hash>e026b7a3551978e41db1e47895ac3cc32580a14b775afc2ce09d22a51cefdce7</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\mem2mem0.h</file>
+         <hash>49cd03180c10ca40ba39ac185c5816d5b2b6d686fc5caa9c66019c8fa47fd37e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\matrix3.h</file>
+         <hash>ac244f0e5d89f05ff2d347e6ee7dc9a523e513eaf34d13bdf63c40cc5b0b191c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\definitions.h</file>
+         <hash>6b5d006cda425e3f7bfb58c66a40bf511029c414e66bd98063d4dc7757a4511e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\tc1.h</file>
+         <hash>bcb87b634e0dd95b3becc7ca0887eab6a30cb2776159ede5b517904f8a8ba508</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\rtc.h</file>
+         <hash>e8c10d6dda362bddb5c4d06d25f4962de79aa252938fd6f0df173ad213171a1c</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\sfrbu.h</file>
+         <hash>ff10afbe3aa46fa496c5e63f882b935835eb53795ba22dfeaa61539933274ecc</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\chipid.h</file>
+         <hash>a93f5e09e56016e2bd0a4152a3e2c77cd008e243578bb3e77a1adc35ca1993cb</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\icm.h</file>
+         <hash>f5f55a170e839bc2be09c8d19faebb91016120dbf97477ab2eb4f6a37c4b6f50</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\flexcom6.h</file>
+         <hash>65ef019bb8f9864672dae8698ff29281fa0785e0d3be0c1ba01f3ad72e048125</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\gpbr.h</file>
+         <hash>efe1c413944a2de3a0110753693df7e239c0807d2a80a7a6ec17522292dbc63e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\flexcom\usart\plib_flexcom0_usart.c</file>
+         <hash>b11388d735e4ce2bfa6adb842cbf022a31106e059c4577d042796934d663ffd1</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\chipid.h</file>
+         <hash>76bccc5005cb2ddb8cf937d936873cc884c59a65f5bd8eddc36a6a7f57430157</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\initialization.c</file>
+         <hash>870200561064dc63214c60d3fc7186beb9e1960b8c39f5da7469bca332f7ab09</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\flexcom2.h</file>
+         <hash>52d75c1ea70d171df55b1019aad4e39b99386d0dccc781f4f39ad54f90da50c6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang_ltm.h</file>
+         <hash>8621969ea669a1b230ff2125a760ef66d575c48cb45e9e457f768909abcbda46</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\flexcom\usart\plib_flexcom0_usart.h</file>
+         <hash>1148edd0d109ee3bc66bf556ae3df0bf24c2846ad44b414aba619b0a861a7af8</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\dwdt\plib_dwdt.c</file>
+         <hash>3a7bb6805229f1ac8070816c089838346738a79695b9c3fb3fceb6e7ada5a353</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\cmcc1.h</file>
+         <hash>3590c6ee4395c3a88feb3a246522c3f241668dc805452bdf1b87a830836820c1</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\rtt.h</file>
+         <hash>13dcfe712a6c73de0b2908173bf52e3e4b1ef90944f112e3dd4ac94b4eca77cf</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\stdio\xc32_monitor.c</file>
+         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\device_cache.h</file>
+         <hash>e2914501b361bbc93a56d6915b1bf4fac00277e61f31fdee87a587bc15dea5b6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\syscwp.h</file>
+         <hash>76c4859d1f41f172d960e0c889cd9614a5cb8e1a1c031b0d01e74717ee497268</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\libc_syscalls.c</file>
+         <hash>88bb2e34c939601b5b7ad076556e3ee0fcedf388436b8cddb6d6fd3e9d07472f</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\dwdt.h</file>
+         <hash>851e24720c1641211360b5bce61f14858b8a286baccbfdf1fc6de9489fe446b5</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\dwdt\plib_dwdt.h</file>
+         <hash>b4593d5f3443493f70c78683d85bc881e9b32bfd17dbdad3a3e2bf6f6f6811ce</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\osc.h</file>
+         <hash>46778360d40c9d6c0fe0f4f135f0c2c58805ed9e75a2044ccf9dbd4b09c86249</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\aes.h</file>
+         <hash>e704c1e6f188fd6f8dc3709b38cbf30be9c5a578e0c35693d0f4705e75acee4a</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\pio0.h</file>
+         <hash>c24b09a6ec17597da4711ff232b16269bdd5fc930e4f1d16084d7ad976bdf597</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\flexcom.h</file>
+         <hash>d68b37b84efc33539ed7b311461b77595f219f6d383e5baeaceea3a0b00ae7f9</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\mcspi.h</file>
+         <hash>f154204610999aff93d84f8a68c061bacfda56971d106e0818bd4b4c92f9fa04</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\aes.h</file>
+         <hash>30ecfa9c29d9b8c7f0c4c7f6fdc8773f2134ad7ce743c67a5ce27d2c66b28e34</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\mem2mem1.h</file>
+         <hash>4f266a3ebdca315d41f7dc1b30560fdbd2a79d9c9d521047f522515805450a4e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\syscwp.h</file>
+         <hash>367bc4bf4a0a2533466cd5f1b1e37b7f1dff81af75035d18f277b1269e23cc9f</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\matrix2.h</file>
+         <hash>2a2d779728e2a757f168adccb9d93355fef22e20dde68e4ee234a2441710a4b5</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\tc2.h</file>
+         <hash>60736973d7f9aab68a0e07923dd60e05fdb0350dab7c0ef39554ea78222debce</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\aesb.h</file>
+         <hash>ca5213a388344298aa09d03ad3207101bf76304b2dbe0e2cb5a099aabb8f1a76</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\rstc.h</file>
+         <hash>97dc0fcd88435ae776650c4c72dbbe9001dd9adc75ea5c99bafc36af731457fd</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\trng.h</file>
+         <hash>ac57fce258a730ac8b0679e6d7c52c49bddb135a9d1f22668671901a84b9fea6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\pdc.h</file>
+         <hash>3001b2ef404003a9e802536a6a3e983003c586df3e2a48fb8e097969f0bd7724</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\PIC32CX2051MTSH128.ld</file>
+         <hash>c6dfa1c9f647c6c3ee86f24233ad844d2f688ba6b57d5eea4b70975e99529edc</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\uart.h</file>
+         <hash>77ce7b5d77957dfe9ab8107b10ee34acb8f190b056b9f2250feda39b86d5ea8e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\slcdc.h</file>
+         <hash>7b77072e08b10a77c822321871e2c3ed4363edc8e4e84b3d13b7b65f3be64211</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\flexcom5.h</file>
+         <hash>1be58af952bb46fb2b806441621d7bf5493ce14e3834c51f4436f4a1a350baaa</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\pio\plib_pio.c</file>
+         <hash>ab3d83d06ab12bae415cd867011c577709381c7b985afc1fe7a10cf26230ec52</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\rtt.h</file>
+         <hash>d3e216a58cfd12f0b742e22e4caaf537248dab19d6936d895f789c57a2ecb36e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\cpkcc.h</file>
+         <hash>ecce887b088c9c43242605105742e6b977faef1836da8aeaa1503a3a0364aeb3</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_db\peripheral\pio\plib_pio.h</file>
+         <hash>fe7a6f065d5808e8504fd7e28947afaad01fea73b23b9e0861697cdc88c0dbda</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\flexcom1.h</file>
+         <hash>1a87cc1dc1c0545a25883c6142d97ab35cd401c8558bb8d6804c398cec14f247</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\ipc0.h</file>
+         <hash>bc6926eac1995dc3823bb8834bb7da6bfdb6050e41cc584fbd1b87abf7a8b90f</hash>
+      </entry>
+   </generatedFileHashHistoryMap>
+</config>

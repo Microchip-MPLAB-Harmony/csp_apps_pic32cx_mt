@@ -3,13 +3,9 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>flexcom_usart_ring_buffer_interrupt_pic32cx_mtsh_db.X</name>
-            <creation-uuid>55086cc7-dc33-406f-8bad-7d4c2faa76d1</creation-uuid>
+            <name>flexcom_usart_ring_buffer_interrupt_pic32cx_mtsh_db</name>
+            <creation-uuid>a257831d-de0f-4ec5-be06-8476f7c941c4</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions>c</c-extensions>
-            <cpp-extensions/>
-            <header-extensions>h</header-extensions>
-            <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList/>
