@@ -44,15 +44,18 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [PIC32CXMTC Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A)
 
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Power on the board using a 12V power supply on J3
+- Attach a debugger to the SWD/JTAG port J20
 
 ### Setting up [PIC32CXMTG Evaluation Kit](https://www.microchip.com/en-us/development-tool/EV11K09A)
 
+- Power on the board using a 5V power supply on J17
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ### Setting up [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Power on the board using a 12V power supply on J3
+- Attach a debugger to the SWD/JTAG port J17
 
 ## Running the Application
 
