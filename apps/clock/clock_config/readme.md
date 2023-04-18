@@ -40,8 +40,9 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 
-- Connect an oscilloscope to monitor the PORT pin PA2 
-- Connect the Debug USB port on the board to the computer using a micro USB cable
+- Connect an oscilloscope to monitor the PORT pin PA2 available on Pin 10 of J20 connector
+- Power on the board using a 12V power supply on J3
+- Attach a debugger to the SWD/JTAG port J17
 
 ## Running the Application
 
