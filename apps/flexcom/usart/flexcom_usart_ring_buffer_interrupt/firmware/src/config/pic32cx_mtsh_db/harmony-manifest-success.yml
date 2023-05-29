@@ -4,7 +4,7 @@
 
 
 project: flexcom_usart_ring_buffer_interrupt
-creation_date: 2023-04-18T13:58:22.228+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2023-05-30T03:13:59.974+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mcc_mode: IDE            # [IDE|Standalone|Headless]
 mcc_version: v5.3.0
@@ -16,4 +16,3 @@ compiler: XC32 (v4.21)
 modules:
     - {name: "csp", version: "v3.17.0"}
     - {name: "dev_packs", version: "v3.17.0"}
-
