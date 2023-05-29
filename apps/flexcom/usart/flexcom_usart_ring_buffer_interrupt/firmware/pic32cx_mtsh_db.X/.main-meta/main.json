@@ -3,11 +3,11 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.1.0",
-		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32cx_mt_tc_capture_mode",
+		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32cx_mt_flexcom_usart_ring_buffer_interrupt_pic32cx_mtsh_db",
 		"version": "3.1.0",
-		"displayName": "TC capture mode Example for PIC32CXMTSH Family",
-		"projectName": "tc_capture_mode_pic32cx_mtsh_db",
-		"shortDescription": "This example shows how to use the TC module in capture mode to measure duty cycle and frequency of an external input.",
+		"displayName": "FLEXCOM USART ring buffer Example for PIC32CXMTSH Family",
+		"projectName": "flexcom_usart_ring_buffer_interrupt_pic32cx_mtsh_db",
+		"shortDescription": "This example application demonstrates how to use the FLEXCOM peripheral in USART ring buffer mode.",
 		"ide": {
 			"name": "MPLABX",
 			"semverRange": ">=6.5.0"
@@ -40,31 +40,33 @@
 		"subcategories": [
 			[
 				"Development Kit",
-				"PIC32CXMTSH Development Board"
+				"PIC32CXMTSH Evaluation Kit"
 			],
 			[
 				"Harmony",
 				"Peripherals",
-				"TC"
+				"FLEXCOM"
 			],
 			[
 				"Peripherals",
-				"TC"
+				"FLEXCOM"
 			]
 		],
 		"peripherals": [
-			"TC"
+			"FLEXCOM"
 		],
 		"keywords": [
 			"MCC",
 			"Harmony",
 			"PIC32CX2051MTSH128",
 			"PIC32CXMTSH Family",
-			"TC",
-			"TCC",
-			"TMR",
-			"Timer",
-			"Counter"
+			"FLEXCOM",
+			"Serial Communication",
+			"I2C",
+			"SPI",
+			"UART",
+			"SERCOM",
+			"TWI"
 		],
 		"additionalData": {
 			"longDescription": {
