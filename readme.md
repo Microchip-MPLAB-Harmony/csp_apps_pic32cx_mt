@@ -39,7 +39,7 @@ The following applications are provided to demonstrate the typical or interestin
 | ---- | ----------- |
 | [ACC interrupt](apps/acc/acc_interrupt/readme.md) | This example application shows how to use an analog comparator controller (ACC) generate an interrupt on a compare event.  |
 | [ADC Polling](apps/adc/adc_polled_mode/readme.md) | This example demonstrates how to sample an analog input in polled mode and send the converted data to console |
-| [ADC user sequence](apps/adc/adc_user_sequence/readme.md) | This example demonstrates how to sample three analog inputs using the user sequencer in software trigger mode and send the converted data to the console |
+| [ADC user sequence](apps/adc/adc_user_sequence/readme.md) | This example demonstrates how to sample two analog inputs using the user sequencer in software trigger mode and send the converted data to the console |
 | [Clock configuration](apps/clock/clock_config/readme.md) | This example application shows how to configure the clock system to run the device at maximum frequency. It also outputs a prescaled clock signal on a GPIO pin for measurement and verification |
 | [DWDT timeout](apps/dwdt/dwdt_timeout/readme.md) | This example application shows how to generate a Dual Watchdog timer reset by simulating a deadlock |
 | [FLEXCOM SPI EEPROM read write](apps/flexcom/spi/master/flexcom_spi_eeprom/readme.md) | This example application shows how to use the flexcom module in SPI mode |
@@ -48,6 +48,8 @@ The following applications are provided to demonstrate the typical or interestin
 | [MEM2MEM memory transfer](apps/mem2mem/mem2mem_memory_transfer/readme.md) | This application demonstrates data transfer between two memory location using MEM2MEM |
 | [PIO interrupt](apps/pio/pio_led_on_off_interrupt/readme.md) | This example shows how to generate GPIO interrupt on switch press and release, and indicate the switch status using the LED |
 | [PIO polling](apps/pio/pio_led_on_off_polling/readme.md) | This example shows how to poll the switch input, and indicate the switch status using the LED |
+| [PWM Generation](apps/pwm/pwm_synchronous_channels/readme.md) | This example shows how to use the PWM peripheral to generate PWM signals with dead time |
+| [QSPI flash read write](apps/qspi/qspi_read_write/readme.md) | This example shows how to use the QSPI Peripheral library to perform erase, write and read operation with the QSPI Serial Flash memory in Quad IO mode |
 | [RSTC interrupt](apps/rstc/led_switcher/readme.md) | This example shows how to use the RSTC peripheral to generate an interrupt instead of generating a reset, when the Reset switch is pressed on board |
 | [RTC alarm interrupt](apps/rtc/rtc_alarm/readme.md) | This example shows how to use the RTC to configure the time and generate the alarm |
 | [RTT periodic interrupt](apps/rtt/rtt_periodic_timeout/readme.md) | This example shows how to use the RTT to generate periodic interrupts |
