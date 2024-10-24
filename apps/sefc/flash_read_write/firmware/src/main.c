@@ -77,7 +77,7 @@ void populate_buffer(uint32_t* data)
 int main ( void )
 {
     uint32_t data [buffer_size] = {0};
-    uint32_t start_address = 0x1001E00;
+    uint32_t start_address = 0x1020000;
 
     /* Initialize all modules */
     SYS_Initialize ( NULL );
@@ -85,15 +85,15 @@ int main ( void )
     /*Populate random data to programmed*/
     populate_buffer(data);
     
-    while(SEFC0_IsBusy());
+    while(SEFC_IsBusy(start_address));
     
     /*Erase the sector*/
-    SEFC0_SectorErase(start_address);
+    SEFC_SectorErase(start_address);
     
-    while(SEFC0_IsBusy());
+    while(SEFC_IsBusy(start_address));
 
     /*Program 512 byte page*/
-    SEFC0_PageWrite(data, start_address);
+    SEFC_PageWrite(data, start_address);
     
     /* Verify the programmed content*/
     if (!memcmp(data, (void *)start_address, sizeof(data)))
