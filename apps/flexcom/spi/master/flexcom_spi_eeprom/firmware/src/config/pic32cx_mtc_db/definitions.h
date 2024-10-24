@@ -56,8 +56,8 @@
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/supc/plib_supc.h"
 #include "peripheral/sefc/plib_sefc0.h"
-#include "peripheral/sefc/plib_sefc1.h"
 #include "peripheral/flexcom/spi/master/plib_flexcom2_spi_master.h"
+#include "peripheral/sefc/plib_sefc1.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -68,13 +68,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "PIC32CX2051MTC128"
-#define DEVICE_ARCH			 "CORTEX-M4"
-#define DEVICE_FAMILY		 "PIC32CX_MT"
-#define DEVICE_SERIES		 "PIC32CXMTC"
+#define DEVICE_NAME          "PIC32CX2051MTC128"
+#define DEVICE_ARCH          "CORTEX-M4"
+#define DEVICE_FAMILY        "PIC32CX_MT"
+#define DEVICE_SERIES        "PIC32CXMTC"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 200000000
+#define CPU_CLOCK_FREQUENCY 200000000U
 
 // *****************************************************************************
 // *****************************************************************************
