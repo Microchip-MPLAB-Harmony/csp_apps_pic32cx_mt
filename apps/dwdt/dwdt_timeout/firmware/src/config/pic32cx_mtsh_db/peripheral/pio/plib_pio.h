@@ -91,39 +91,39 @@
 
 
 /*** Macros for LED_RED pin ***/
-#define LED_RED_Set()               (PIOD_REGS->PIO_SODR = (1<<18))
-#define LED_RED_Clear()             (PIOD_REGS->PIO_CODR = (1<<18))
+#define LED_RED_Set()               (PIOD_REGS->PIO_SODR = ((uint32_t)1U<<18U))
+#define LED_RED_Clear()             (PIOD_REGS->PIO_CODR = ((uint32_t)1U<<18U))
 #define LED_RED_Toggle()            do {\
-                                            PIOD_REGS->PIO_MSKR = (1<<18); \
-                                            PIOD_REGS->PIO_ODSR ^= (1<<18);\
+                                            PIOD_REGS->PIO_MSKR = ((uint32_t)1U<<18U); \
+                                            PIOD_REGS->PIO_ODSR ^= ((uint32_t)1U<<18U);\
                                         } while (0)
 #define LED_RED_OutputEnable()      do {\
-                                            PIOD_REGS->PIO_MSKR = (1<<18); \
-                                            PIOD_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOD_REGS->PIO_MSKR = ((uint32_t)1U<<18U); \
+                                            PIOD_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define LED_RED_InputEnable()       do { \
-                                            PIOD_REGS->PIO_MSKR = (1<<18); \
-                                            PIOD_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOD_REGS->PIO_MSKR = ((uint32_t)1U<<18U); \
+                                            PIOD_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define LED_RED_Get()               ((PIOD_REGS->PIO_PDSR >> 18) & 0x1)
+#define LED_RED_Get()               ((PIOD_REGS->PIO_PDSR >> 18U) & 0x1U)
 #define LED_RED_PIN                  PIO_PIN_PD18
 
 /*** Macros for Scroll_Dn_SW pin ***/
-#define Scroll_Dn_SW_Set()               (PIOA_REGS->PIO_SODR = (1<<15))
-#define Scroll_Dn_SW_Clear()             (PIOA_REGS->PIO_CODR = (1<<15))
+#define Scroll_Dn_SW_Set()               (PIOA_REGS->PIO_SODR = ((uint32_t)1U<<15U))
+#define Scroll_Dn_SW_Clear()             (PIOA_REGS->PIO_CODR = ((uint32_t)1U<<15U))
 #define Scroll_Dn_SW_Toggle()            do {\
-                                            PIOA_REGS->PIO_MSKR = (1<<15); \
-                                            PIOA_REGS->PIO_ODSR ^= (1<<15);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<15U); \
+                                            PIOA_REGS->PIO_ODSR ^= ((uint32_t)1U<<15U);\
                                         } while (0)
 #define Scroll_Dn_SW_OutputEnable()      do {\
-                                            PIOA_REGS->PIO_MSKR = (1<<15); \
-                                            PIOA_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<15U); \
+                                            PIOA_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define Scroll_Dn_SW_InputEnable()       do { \
-                                            PIOA_REGS->PIO_MSKR = (1<<15); \
-                                            PIOA_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOA_REGS->PIO_MSKR = ((uint32_t)1U<<15U); \
+                                            PIOA_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define Scroll_Dn_SW_Get()               ((PIOA_REGS->PIO_PDSR >> 15) & 0x1)
+#define Scroll_Dn_SW_Get()               ((PIOA_REGS->PIO_PDSR >> 15U) & 0x1U)
 #define Scroll_Dn_SW_PIN                  PIO_PIN_PA15
 #define Scroll_Dn_SW_InterruptEnable()   (PIOA_REGS->PIO_IER = (1<<15))
 #define Scroll_Dn_SW_InterruptDisable()  (PIOA_REGS->PIO_IDR = (1<<15))

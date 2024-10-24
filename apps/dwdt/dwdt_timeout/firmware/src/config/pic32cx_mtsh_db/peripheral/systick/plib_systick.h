@@ -57,7 +57,7 @@
 
 #define SYSTICK_FREQ   133333300U
 
-#define SYSTICK_INTERRUPT_PERIOD_IN_US  (125829U)
+#define SYSTICK_INTERRUPT_PERIOD_IN_US  (500000U)
 
 typedef void (*SYSTICK_CALLBACK)(uintptr_t context);
 
