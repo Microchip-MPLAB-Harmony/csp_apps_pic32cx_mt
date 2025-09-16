@@ -57,7 +57,7 @@ typedef struct
 }rstcCallback_t;
 
 
-volatile static rstcCallback_t rstcCallbackObj;
+static volatile rstcCallback_t rstcCallbackObj;
 
 void RSTC_Initialize (void)
 {
