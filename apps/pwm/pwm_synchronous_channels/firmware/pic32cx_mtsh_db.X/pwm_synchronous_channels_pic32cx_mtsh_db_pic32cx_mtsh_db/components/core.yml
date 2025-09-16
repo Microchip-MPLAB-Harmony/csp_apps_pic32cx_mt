@@ -1,0 +1,303 @@
+configVersion: 1.0.0
+componentName: core
+coreVersion: 5.8.2
+device: PIC32CX2051MTSH128
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: core
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS_5
+  type: package
+  version: 5.9.0
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: core
+          x: '240'
+          y: '20'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    NVIC_90_0_ENABLE:
+      attributes:
+        id: NVIC_90_0_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_90_0_HANDLER:
+      attributes:
+        id: NVIC_90_0_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PWM_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_90_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_90_0_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_20_FUNCTION_TYPE:
+      attributes:
+        id: PIN_20_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: PWM_PWMH2
+          type: User
+        type: Values
+      type: String
+    PIN_20_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_20_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: B
+          type: User
+        type: Values
+      type: String
+    PIN_22_FUNCTION_TYPE:
+      attributes:
+        id: PIN_22_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: PWM_PWML0
+          type: User
+        type: Values
+      type: String
+    PIN_22_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_22_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_24_FUNCTION_TYPE:
+      attributes:
+        id: PIN_24_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: PWM_PWML2
+          type: User
+        type: Values
+      type: String
+    PIN_24_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_24_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_7_FUNCTION_TYPE:
+      attributes:
+        id: PIN_7_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: PWM_PWMH0
+          type: User
+        type: Values
+      type: String
+    PIN_7_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_7_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: C
+          type: User
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueA:
+      attributes:
+        id: PORT_D_MSKR_ValueA
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0xa0000'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueB:
+      attributes:
+        id: PORT_D_MSKR_ValueB
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x10000'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueC:
+      attributes:
+        id: PORT_D_MSKR_ValueC
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x8'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueD:
+      attributes:
+        id: PORT_D_MSKR_ValueD
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueE:
+      attributes:
+        id: PORT_D_MSKR_ValueE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueF:
+      attributes:
+        id: PORT_D_MSKR_ValueF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueG:
+      attributes:
+        id: PORT_D_MSKR_ValueG
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueGPIO:
+      attributes:
+        id: PORT_D_MSKR_ValueGPIO
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PWM_CLOCK_ENABLE:
+      attributes:
+        id: PWM_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: pwm
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PWM_INTERRUPT_ENABLE:
+      attributes:
+        id: PWM_INTERRUPT_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: pwm
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PWM_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: PWM_INTERRUPT_ENABLE_UPDATE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PWM_INTERRUPT_HANDLER:
+      attributes:
+        id: PWM_INTERRUPT_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: pwm
+            value: PWM_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    PWM_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: PWM_INTERRUPT_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: pwm
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+  userData:
+    children:
+    - attributes:
+        canvasHeight: '172'
+        canvasWidth: '777'
+      type: GraphSettings
+    - children:
+      - attributes:
+          id: profile0
+          name: Main
+        type: Profile
+      type: PowerProfiles
+    type: UserData
