@@ -234,8 +234,20 @@
       <itemPath>../src/config/pic32cx_mtsh_db/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
+      <logicalFolder name="adc_user_sequence_pic32cx_mtsh_db_pic32cx_mtsh_db" displayName="adc_user_sequence_pic32cx_mtsh_db_pic32cx_mtsh_db" projectFiles="true">
+        <itemPath>adc_user_sequence_pic32cx_mtsh_db_pic32cx_mtsh_db/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>adc_user_sequence_pic32cx_mtsh_db_pic32cx_mtsh_db/components/adc.yml</itemPath>
+          <itemPath>adc_user_sequence_pic32cx_mtsh_db_pic32cx_mtsh_db/components/cmsis.yml</itemPath>
+          <itemPath>adc_user_sequence_pic32cx_mtsh_db_pic32cx_mtsh_db/components/core.yml</itemPath>
+          <itemPath>adc_user_sequence_pic32cx_mtsh_db_pic32cx_mtsh_db/components/dfp.yml</itemPath>
+          <itemPath>adc_user_sequence_pic32cx_mtsh_db_pic32cx_mtsh_db/components/flexcom0.yml</itemPath>
+          <itemPath>adc_user_sequence_pic32cx_mtsh_db_pic32cx_mtsh_db/components/sefc0.yml</itemPath>
+          <itemPath>adc_user_sequence_pic32cx_mtsh_db_pic32cx_mtsh_db/components/sefc1.yml</itemPath>
+          <itemPath>adc_user_sequence_pic32cx_mtsh_db_pic32cx_mtsh_db/components/stdio.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>adc_user_sequence_pic32cx_mtsh_db.mc3</itemPath>
       <itemPath>../src/config/pic32cx_mtsh_db/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -249,7 +261,7 @@
         <targetPluginBoard/>
         <platformTool>j32</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>

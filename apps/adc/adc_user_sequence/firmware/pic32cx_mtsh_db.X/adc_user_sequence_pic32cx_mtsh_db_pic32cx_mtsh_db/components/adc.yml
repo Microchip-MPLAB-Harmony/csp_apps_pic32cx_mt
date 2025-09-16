@@ -1,0 +1,256 @@
+configVersion: 1.0.0
+componentName: adc
+coreVersion: 5.8.2
+device: PIC32CX2051MTSH128
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: adc
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS_5
+  type: package
+  version: 5.9.0
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: adc
+          x: '31'
+          y: '59'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    ADC_0_CHER:
+      attributes:
+        id: ADC_0_CHER
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_1_CHER:
+      attributes:
+        id: ADC_1_CHER
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_1_IER_EOC:
+      attributes:
+        id: ADC_1_IER_EOC
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_2_CHER:
+      attributes:
+        id: ADC_2_CHER
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_2_IER_EOC:
+      attributes:
+        id: ADC_2_IER_EOC
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_3_CHER:
+      attributes:
+        id: ADC_3_CHER
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_3_IER_EOC:
+      attributes:
+        id: ADC_3_IER_EOC
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_4_CHER:
+      attributes:
+        id: ADC_4_CHER
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_4_IER_EOC:
+      attributes:
+        id: ADC_4_IER_EOC
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_CLK:
+      attributes:
+        id: ADC_CLK
+      children:
+      - children:
+        - attributes:
+            id: adc
+            value: '6250000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    ADC_COMP_WINDOW:
+      attributes:
+        id: ADC_COMP_WINDOW
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_EMR_SIGNMODE_VALUE:
+      attributes:
+        id: ADC_EMR_SIGNMODE_VALUE
+      children:
+      - children:
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: KeyValueSet
+    ADC_FMR_ENFIFO:
+      attributes:
+        id: ADC_FMR_ENFIFO
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_MR_PRESCAL:
+      attributes:
+        id: ADC_MR_PRESCAL
+      children:
+      - children:
+        - attributes:
+            value: '7'
+          type: User
+        type: Values
+      type: Integer
+    ADC_MR_USEQ:
+      attributes:
+        id: ADC_MR_USEQ
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_SEQR1_USCH1:
+      attributes:
+        id: ADC_SEQR1_USCH1
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: CH1
+          type: User
+        type: Values
+      type: Combo
+    ADC_SEQR1_USCH2:
+      attributes:
+        id: ADC_SEQR1_USCH2
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: CH2
+          type: User
+        type: Values
+      type: Combo
+    ADC_TRGR_MODE:
+      attributes:
+        id: ADC_TRGR_MODE
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+  userData: {}
