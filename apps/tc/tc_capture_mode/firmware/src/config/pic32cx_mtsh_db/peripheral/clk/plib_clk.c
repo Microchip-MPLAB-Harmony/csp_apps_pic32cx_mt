@@ -439,7 +439,7 @@ static void PeripheralClockInitialize(void)
 
         { ID_PIOA, 1U, 0U, 0U, 0U},
 
-        { ID_TC0_CHANNEL0, 1U, 0U, 0U, 0U},
+        { ID_TC0_CHANNEL0, 1U, 1U, 0x0U, 0U},
 
         { ID_TC0_CHANNEL1, 1U, 0U, 0U, 0U},
 
@@ -469,7 +469,7 @@ static void PeripheralClockInitialize(void)
 /*********************************************************************************
                                 Clock Initialize
 *********************************************************************************/
-void CLK_Initialize( void )
+void CLOCK_Initialize( void )
 {
     if(RSTC_PMCResetStatusGet())
     {
