@@ -3,6 +3,33 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Harmony 3 peripheral library application examples for PIC32CX MT family v3.3.0
+
+### Development kit and demo application support
+
+Following table provides number of peripheral library examples available for different development kits.
+
+| Development Kits  | MPLAB X applications |
+|:-----------------:|:-------------------:|
+| [PIC32CXMTSH-DB Evaluation Kit](https://www.microchip.com/en-us/development-tool/EV84M21A) | 25 |
+| [PIC32CXMTC-DB Evaluation Kit](https://www.microchip.com/en-us/development-tool/EV58E84A) | 4 |
+| [PIC32CXMTG-EK Evaluation Kit](https://www.microchip.com/en-us/development-tool/EV11K09A) | 4 |
+
+### New Features
+
+- None
+
+### Known Issues
+
+- None
+
+### Development Tools
+
+- [MPLAB® X IDE 6.25](https://www.microchip.com/mplab/mplab-x-ide)
+- MPLAB® X IDE plug-ins:
+  - MPLAB® Code Configurator (MCC) 5.6.2
+- [MPLAB® XC32 C/C++ Compiler 4.60](https://www.microchip.com/mplab/compilers)
+
 ## Harmony 3 peripheral library application examples for PIC32CX MT family v3.2.0
 
 ### Development kit and demo application support
